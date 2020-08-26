@@ -48,8 +48,8 @@
   		mixins: [VueTRON],
 		el: '#App',
 		data: {
-            upline: 'TTDVMe19CyrNF3UhEfp6bwpc5d2xhFkwqLf4', // TDVMe19CyrNF3UhEfp6bwpc5d2xhFkwqLf - Zero address
-            contract_address: 'TDVMe19CyrNF3UhEfp6bwpc5d2xhFkwqLf1',
+            upline: 'TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa', // TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa - Zero address
+            contract_address: 'TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa',
             contract: {
                 invested: 0,
                 withdraw: 0,
@@ -185,7 +185,7 @@
                 });
             },
             getEventsList() {
-            	fetch('https://api.shasta.trongrid.io/v1/contracts/TDVMe19CyrNF3UhEfp6bwpc5d2xhFkwqLf/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
+            	fetch('https://api.trongrid.io/v1/contracts/TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
             		res.data.forEach(v => {
             			this.events.push({
             				time: v.block_timestamp,
