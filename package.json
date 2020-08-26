@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "homepage":"https//xmarkwilliam.github.io/trxfriends",
