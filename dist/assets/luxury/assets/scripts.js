@@ -1,0 +1,1 @@
+$(function(){!function(){$(".js-slider-handle");var a=$(".js-slider-text");$(".js-slider").slider({range:"min",value:10,min:10,max:30,create:function(){a.text($(this).slider("value"))},slide:function(e,t){App.calc.tarif=Math.max(0,parseInt(t.value)-10),a.text(t.value)}})}()});

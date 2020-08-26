@@ -1,0 +1,19 @@
+{
+  "name": "trxfriends",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^3.1.0",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "homepage":"https//xmarkwilliam.github.io/trxfriends",
+  "author": "",
+  "license": "ISC"
+ 
+}
