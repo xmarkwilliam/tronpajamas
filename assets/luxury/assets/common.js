@@ -65,31 +65,20 @@
                 structure: [0,0,0]
             },
             tarifs: [
-{days: 5, percent: 200},
-{days: 10, percent: 200},
-{days: 12, percent: 254},
-{days: 13, percent: 276},
-{days: 14, percent: 298},
-{days: 15, percent: 320},
-{days: 16, percent: 342},
-{days: 17, percent: 364},
-{days: 18, percent: 250},
-{days: 19, percent: 408},
-{days: 20, percent: 430},
-{days: 21, percent: 452},
-{days: 22, percent: 474},
-{days: 23, percent: 496},
-{days: 24, percent: 518},
-{days: 25, percent: 540},
-{days: 26, percent: 562},
-{days: 27, percent: 584},
-{days: 28, percent: 606},
-{days: 29, percent: 628},
-{days: 30, percent: 650}
+{days: 7, percent: 120},
+{days: 8, percent: 125},
+{days: 9, percent: 130},
+{days: 10, percent:140},
+{days: 11, percent:150},
+{days: 12, percent: 160},
+{days: 13, percent: 170},
+{days: 14, percent: 180},
+{days: 15, percent: 200},
+
             ],
             calc: {
             	tarif: 0,
-            	amount: 50
+            	amount: 100
             },
             events: []
 		},
