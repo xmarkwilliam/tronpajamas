@@ -66,7 +66,7 @@
             },
             tarifs: [
 {days: 5, percent: 200},
-{days: 11, percent: 232},
+{days: 10, percent: 200},
 {days: 12, percent: 254},
 {days: 13, percent: 276},
 {days: 14, percent: 298},
