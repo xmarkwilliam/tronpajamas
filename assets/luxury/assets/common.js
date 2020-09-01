@@ -65,15 +65,15 @@
                 structure: [0,0,0]
             },
             tarifs: [
-            	{days: 10, percent: 210},
+{days: 5, percent: 200},
 {days: 11, percent: 232},
 {days: 12, percent: 254},
 {days: 13, percent: 276},
 {days: 14, percent: 298},
 {days: 15, percent: 320},
 {days: 16, percent: 342},
-            	{days: 17, percent: 364},
-{days: 18, percent: 386},
+{days: 17, percent: 364},
+{days: 18, percent: 250},
 {days: 19, percent: 408},
 {days: 20, percent: 430},
 {days: 21, percent: 452},
