@@ -48,8 +48,8 @@
   		mixins: [VueTRON],
 		el: '#App',
 		data: {
-            upline: 'TTKf7EkdHEfggS3qXx1gFRUTofgrWsA1Hc4', // TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa - Zero address
-            contract_address: 'TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa',
+            upline: 'TTKf7EkdHEfggS3qXx1gFRUTofgrWsA1Hc4', // TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG - Zero address
+            contract_address: 'TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG',
             contract: {
                 invested: 0,
                 withdraw: 0,
@@ -65,16 +65,27 @@
                 structure: [0,0,0]
             },
             tarifs: [
-{days: 7, percent: 120},
-{days: 8, percent: 125},
-{days: 9, percent: 130},
-{days: 10, percent:140},
-{days: 11, percent:150},
-{days: 12, percent: 160},
-{days: 13, percent: 170},
-{days: 14, percent: 180},
-{days: 15, percent: 200},
-
+                {days: 10, percent: 120},
+                {days: 11, percent: 123},
+                {days: 12, percent: 126},
+                {days: 13, percent: 129},
+                {days: 14, percent: 132},
+                {days: 15, percent: 135},
+                {days: 16, percent: 138},
+                {days: 17, percent: 142},
+                {days: 18, percent: 145},
+                {days: 19, percent: 148},
+                {days: 20, percent: 152},
+                {days: 21, percent: 155},
+                {days: 22, percent: 158},
+                {days: 23, percent: 162},
+                {days: 24, percent: 166},
+                {days: 25, percent: 170},
+                {days: 26, percent: 175},
+                {days: 27, percent: 180},
+                {days: 28, percent: 185},
+                {days: 29, percent: 190},
+                {days: 30, percent: 200}
             ],
             calc: {
             	tarif: 0,
@@ -116,7 +127,7 @@
             // colors: primary = 007eff; success = 4caf50; warning = fb8c00; error = e53935
             notice(msg, color = '007eff', time = 3000) {
                 return new Promise((resolve, reject) => {
-                    let wrap = $('<div style="position:fixed; left:calc(50% - 150px); box-shadow:0 5px 25px rgba(0,0,0,0.2); width:320px; top:40px; background:#' + (color ? color : '007eff') + '; border-radius:10px; color:#fff; padding:20px 20px; font:14px/1.2 Tahoma, sans-serif; cursor:pointer; z-index:999999; text-align:center;">' + msg + '</div>')
+                    let wrap = $('<div style="position:fixed; left:calc(50% - 150px); box-shadow:0 25px 25px rgba(5,1,5,0.2); width:320px; top:40px; background:#' + (color ? color : '007eff') + '; border-radius:10px; color:#fff; padding:20px 20px; font:14px/1.2 Tahoma, sans-serif; cursor:pointer; z-index:999999; text-align:center;">' + msg + '</div>')
                         .on('click', () => { wrap.remove(); resolve(); })
                         .appendTo('body');
                     if(time) setTimeout(() => { wrap.remove(); }, time);
@@ -174,7 +185,7 @@
                 });
             },
             getEventsList() {
-            	fetch('https://api.trongrid.io/v1/contracts/TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
+            	fetch('https://api.shasta.trongrid.io/v1/contracts/TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
             		res.data.forEach(v => {
             			this.events.push({
             				time: v.block_timestamp,
@@ -187,7 +198,7 @@
             },
             deposit(tarif, amount) {
                 amount = parseFloat(amount) || 0;
-                if(amount >= 10) {
+                if(amount >= 100) {
                     this.getTronWeb().then(tronWeb => {
                         this.notice('Confirm transaction', 'fb8c00');
                         contract.deposit(tarif, this.upline).send({

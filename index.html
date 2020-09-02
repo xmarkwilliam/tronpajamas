@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"/>
-    <title>TronBasic</title>
+    <title>TronNinja</title>
     <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">-->
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="assets/styles.css?t=11">
@@ -19,7 +19,8 @@
     <script src="assets/scripts.js?t=11"></script>
     <style>[v-cloak] { display:none; }</style>
 </head>
-<link rel="icon" href="assets/luxury/assets/favicon.ico" />
+<link rel="icon" href="assets/luxury/assets/favicon.ico" sizes="16x16" /> />
+
 <body class="bg-body">
     <div class="b-app" id="App" v-cloak>
         <div class="b-header i-margin-bottom-large">
@@ -27,14 +28,14 @@
                 <div class="i-flex i-flex-middle i-flex-between">
                     <div>
                         <div class="b-header__logo">
-                            <img src="assets/logo.png?1" width="200">
-                            <img rel="shortcut icon" href="favicon.ico" type="image/x-icon" href="assets/favicon.ico">
+                            <img src="assets/luxury/assets/logo.png" width="400">
+                        
                             <!--<img src="img/logo-eclipse.png" srcset="img/logo-eclipse@2x.png 2x,img/logo-eclipse@3x.png 3x" class="logo-eclipse">-->
                         </div>
                     </div>
                     <div>
                         <ul class="b-socials i-list i-flex i-flex-middle">
-                            <li><a href="https://t.me/TronBasic" target="_blank"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://t.me/TronBasic" target="_blank"><i class="fa fa-telegram" aria-hidden="false"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -44,15 +45,20 @@
         <div class="i-container">
             <div class="i-block__title i-margin-bottom-large">
                 <div class="i-margin-bottom-medium">
-                    <strong>  <br>  Earn 200% in 5 DAYS <span class="i-text-red"></span> now <span class="i-text-red"></span> <span class="i-text-red">Greater Rewards</span> 
+                    <strong>  <br>Earn 120%-10 DAYS <span class="i-text-red"></span> <span class="i-text-red"></span> <span class="i-text-red">    Greater Rewards</span> 
                 </div>
                 <div class="i-margin-bottom">
-                    <p class="i-text-muted">From 21.0 to 21.67<span class="i-text-red">%</span> Daily <span class="i-text-red">ROI</span> <br> ,until <span class="i-text-red">8%</span> in 3 <span class="i-text-red">levels</span> of Referral Commission and <span class="i-text-red"> 3% Cashback </span></p>
+                    <p class="i-text-yellow">From 120% to 200% ROI<span class="i-text-red"> 12%</span> Daily <span class="i-text-red">ROI</span> <br> Up to <span class="i-text-red">10%</span> in 3 <span class="i-text-red">levels</span> Hunting Rewards <span class="i-text-red"> 5% Cashback </span></p>
                 </div>
                 <a :href="'https://tronscan.org/#/address/' + contract_address" target="_blank" class="i-btn">Contract Verified</a>
 <a :href="'/'" target="_blank" class="i-btn"> (Trusted Admin)</a>
-<a :href="'https://trongalaxy-bank.ga/'" target="_blank" class="i-btn">Backup Site</a>
-<p class="i-text-muted">Without <span class="i-text-red">BACKDOORS</span> or <span class="i-text-red">SCAMS</span> <br> <span class="i-text-red">SHARE WITH YOUR FRIENDS</span>, and help us grow that <span class="i-text-red"> we want to last.</span></p>
+<a :href="'https:///'" target="_blank" class="i-btn">Ofiicial Telegram</a>
+<p class="i-text-muted"> <span class="i-text-red">JOIN NOW!</span> <span class="i-text-red">AND</span> <br> <span class="i-text-red">BE A TRONNINJA!<span class="i-text-red">
+<div>
+    (SUPPORT THE NINJAS JOIN TELEGRAM EVENTS)
+</div>
+    
+</span></p>
             </div>
             <div class="i-block i-margin-bottom-medium">
                 <div class="i-grid">
@@ -75,7 +81,7 @@
                     <div class="i--text-small i-text-muted">Choose Deposit Period</div>
                     <div>
                         <div class="i-text-medium i-text-bold">
-                            <span class="js-slider-text">10</span> Days
+                            <span class="js-slider-text">7</span> Days
                         </div>
                         <div class="js-slider">
                             <div class="ui-slider-handle js-slider-handle"></div>
@@ -93,13 +99,13 @@
                         </div>
                         <div class="i-text-center">
                             <a href="#" class="i-btn" @click.prevent="deposit(calc.tarif, calc.amount)">Invest</a>
-                            <div class="i-text-small i-text-thin i-text-red" v-if="!tron.account"><a href="https://tronlink.org">Sign in through TronLink</a></div>
+                            <div class="i-text-small i-text-thin i-text-red" v-if="!tron.account"><a href="https://tronlink.org">Dapp Wallet</a></div>
                             <div class="i-text-small i-text-thin i-text-red" v-if="tron.account">transaction fee up to 3 TRX applies</div>
                         </div>
                     </div>
                     <div class="i-w-1-1 i-w-1-2@s i-w-1-4@m i-margin-bottom">
                         <div class="i-text-center">
-                            <span class="i-text-muted">Daily ROI</span>&nbsp;&nbsp;<span class="i-text-medium i-text-bold">{{ (tarifs[calc.tarif].percent / tarifs[calc.tarif].days).toFixed(2) }}</span><span class="i-text-medium i-text-red">%</span>
+                            <span class="i-text-muted">Daily ROI</span>&nbsp;&nbsp;<span class="i-text-medium i-text-bold">{{ (tarifs[calc.tarif].percent / tarifs[calc.tarif].days).toFixed(3) }}</span><span class="i-text-medium i-text-red">%</span>
                         </div>
                     </div>
                     <div class="i-w-1-1 i-w-1-2@s i-w-1-4@m i-margin-bottom">
@@ -123,7 +129,7 @@
                 <div class="i-grid i-margin-bottom">
                     <div class="i-w-1-1 i-w-1-4@s i-margin-bottom">
                         <div class="i-margin-bottom">
-                            <div class="i-text-muted i-text-nowrap">Withdrawable (Divs+Refs+Invite)</div>
+                            <div class="i-text-muted i-text-nowrap">Withdrawable (Divividends)</div>
                             <div class="i-text-medium i-text-bold">{{ user.for_withdraw }} <span class="i-text-red">TRX</span></div>
                         </div>
                         <div class="i-text-left">
@@ -146,19 +152,19 @@
                 <div class="i-grid">
                     <div class="i-w-1-1 i-w-1-1@s i-w-1-2@m i-margin-bottom">
                         <div class="i-margin-bottom">
-                            <div class="i-text-muted">You Referral Link</div>
+                            <div class="i-text-large">You Referral Link</div>
                             <div class="i-text-bold" v-if="user.total_invested > 0">{{ location.origin + window.location.pathname }}?ref={{ tron.account }} <span class="i-text-red" @click="copyText(location.origin + window.location.pathname + '?ref=' + tron.account)">Copy</span></div>
                             <div class="i-text-small i-text-thin i-text-red" v-if="user.total_invested == 0">You will get your ref link after investing</div>
                         </div>
                         <div>
-                            <div><span class="i-text-muted">1 lvl (5% Referral Rewards)</span> - <span class="i-text-bold">{{ user.structure[0] }}</span></div>
-                            <div><span class="i-text-muted">2 lvl (2% Referral Rewards)</span> - <span class="i-text-bold">{{ user.structure[1] }}</span></div>
-                            <div><span class="i-text-muted">3 lvl (1% Referral Rewards)</span> - <span class="i-text-bold">{{ user.structure[2] }}</span></div>
-                            <div><span class="i-text-muted">Cashback 3%</span></div>
+                            <div><span class="i-text-red">1 lvl (6% Referral Rewards)</span> - <span class="i-text-bold">{{ user.structure[0] }}</span></div>
+                            <div><span class="i-text-nowrap">2 lvl (2% Referral Rewards)</span> - <span class="i-text-bold">{{ user.structure[1] }}</span></div>
+                            <div><span class="i-text-red">3 lvl (2% Referral Rewards)</span> - <span class="i-text-bold">{{ user.structure[2] }}</span></div>
+                            <div><span class="i-text-nowrap">Deposit Discount3%</span></div>
                         </div>
                     </div>
                     <div class="i-w-1-1 i-w-1-1@s i-w-1-2@m i-margin-bottom">
-                        <div class="i-text-muted">Last Events</div>
+                        <div class="i-text-large">Last Events</div>
                         <div class="b-overflow">
                             <a :href="'https://tronscan.org/#/transaction/' + event.tx" target="_blank" class="i-text-nowrap" v-for="event in events">{{ new Date(event.time).toLocaleDateString() }} {{ event.type }} {{ event.amount > 0 ? event.amount : '' }} <span class="i-text-red" v-if="event.amount > 0">TRX</span></a>
                         </div>

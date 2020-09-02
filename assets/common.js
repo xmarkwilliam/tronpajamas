@@ -1,1 +1,227 @@
-const _0x2e74=['userInfo','tarif','removeAllRanges','json','nonpayable','input','createElement','setSelectionRange','user','match_bonus','then','NewDeposit','MatchPayout','notice','total_withdrawn','getContractInfo','search','uint256[3]','for_withdraw','getUserInfo','execCommand','userAgent','result','value','life_days','contractInfo','account','click','address','payable','send','toUTCString','trx','last_payout','defaultAddress','remove','uint8','block_timestamp','from','App','#App','ready','fromSun','owner','contract','4caf50','push','_upline','uint256','uint40','Upline','_withdrawn','direct_bonus','007eff','event_name','_direct_bonus','fb8c00','getTime','withdrawn','_tarif','TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa','invested','percent','view','constructor','events',';\x20border-radius:10px;\x20color:#fff;\x20padding:20px\x2020px;\x20font:14px/1.2\x20Tahoma,\x20sans-serif;\x20cursor:pointer;\x20z-index:999999;\x20text-align:center;\x22>','function','Confirm\x20transaction','selectNodeContents','readOnly','TronWeb\x20not\x20found','_invested','_addr','upline=','cookie','event','addr','uint16','addRange','base58','getBalance','toHex','auth','withdraw','deposit','bonus','getTronWeb','amount',';\x20path=/;\x20expires=','_match_bonus','call','Withdraw','toSun','getSelection','copy','structure','getEventsList','tronWeb','players','tron','<div\x20style=\x22position:fixed;\x20left:calc(50%\x20-\x20150px);\x20box-shadow:0\x205px\x2025px\x20rgba(0,0,0,0.2);\x20width:320px;\x20top:40px;\x20background:#','payoutOf','total_match_bonus','</div>','upline','total_invested','match'];(function(_0xa2fdfd,_0x2e74d7){const _0x155224=function(_0xb1a3df){while(--_0xb1a3df){_0xa2fdfd['push'](_0xa2fdfd['shift']());}};_0x155224(++_0x2e74d7);}(_0x2e74,0x8e));const _0x1552=function(_0xa2fdfd,_0x2e74d7){_0xa2fdfd=_0xa2fdfd-0x0;let _0x155224=_0x2e74[_0xa2fdfd];return _0x155224;};(function(){'use strict';const _0x4631bc=[{'constant':!![],'inputs':[],'name':_0x1552('0x63'),'outputs':[{'name':_0x1552('0x26'),'type':'uint256'},{'name':_0x1552('0x11'),'type':_0x1552('0xe')},{'name':_0x1552('0x15'),'type':_0x1552('0xe')},{'name':'_match_bonus','type':_0x1552('0xe')}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':_0x1552('0x21')},{'constant':!![],'inputs':[{'name':_0x1552('0x27'),'type':_0x1552('0x66')}],'name':_0x1552('0x4a'),'outputs':[{'name':'for_withdraw','type':'uint256'},{'name':'total_invested','type':_0x1552('0xe')},{'name':_0x1552('0x58'),'type':_0x1552('0xe')},{'name':_0x1552('0x45'),'type':_0x1552('0xe')},{'name':_0x1552('0x3e'),'type':_0x1552('0x5b')}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':_0x1552('0x21')},{'constant':![],'inputs':[],'name':_0x1552('0x32'),'outputs':[],'payable':![],'stateMutability':_0x1552('0x4e'),'type':_0x1552('0x21')},{'constant':![],'inputs':[{'name':_0x1552('0x61'),'type':_0x1552('0xe')}],'name':'back','outputs':[],'payable':![],'stateMutability':_0x1552('0x4e'),'type':_0x1552('0x21')},{'constant':!![],'inputs':[],'name':_0x1552('0x12'),'outputs':[{'name':'','type':_0x1552('0xe')}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':_0x1552('0x21')},{'constant':!![],'inputs':[{'name':_0x1552('0x27'),'type':_0x1552('0x66')}],'name':_0x1552('0x44'),'outputs':[{'name':_0x1552('0x61'),'type':_0x1552('0xe')}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':'function'},{'constant':!![],'inputs':[],'name':_0x1552('0x9'),'outputs':[{'name':'','type':'address'}],'payable':![],'stateMutability':'view','type':'function'},{'constant':!![],'inputs':[{'name':'','type':_0x1552('0xe')}],'name':'tarifs','outputs':[{'name':_0x1552('0x62'),'type':_0x1552('0x2')},{'name':_0x1552('0x1c'),'type':_0x1552('0x2c')}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':_0x1552('0x21')},{'constant':![],'inputs':[{'name':_0x1552('0x19'),'type':_0x1552('0x2')},{'name':_0x1552('0xd'),'type':'address'}],'name':_0x1552('0x33'),'outputs':[],'payable':!![],'stateMutability':_0x1552('0x67'),'type':_0x1552('0x21')},{'constant':!![],'inputs':[{'name':'','type':_0x1552('0xe')}],'name':'ref_bonuses','outputs':[{'name':'','type':_0x1552('0x2')}],'payable':![],'stateMutability':'view','type':_0x1552('0x21')},{'constant':!![],'inputs':[],'name':_0x1552('0x53'),'outputs':[{'name':'','type':_0x1552('0xe')}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':_0x1552('0x21')},{'constant':!![],'inputs':[],'name':_0x1552('0x18'),'outputs':[{'name':'','type':'uint256'}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':'function'},{'constant':!![],'inputs':[],'name':_0x1552('0x1b'),'outputs':[{'name':'','type':'uint256'}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':_0x1552('0x21')},{'constant':!![],'inputs':[{'name':'','type':_0x1552('0x66')}],'name':_0x1552('0x41'),'outputs':[{'name':_0x1552('0x47'),'type':_0x1552('0x66')},{'name':'dividends','type':_0x1552('0xe')},{'name':_0x1552('0x12'),'type':_0x1552('0xe')},{'name':'match_bonus','type':_0x1552('0xe')},{'name':_0x1552('0x6b'),'type':_0x1552('0xf')},{'name':_0x1552('0x48'),'type':'uint256'},{'name':_0x1552('0x58'),'type':_0x1552('0xe')},{'name':_0x1552('0x45'),'type':_0x1552('0xe')}],'payable':![],'stateMutability':_0x1552('0x1d'),'type':_0x1552('0x21')},{'inputs':[],'payable':![],'stateMutability':_0x1552('0x4e'),'type':_0x1552('0x1e')},{'anonymous':![],'inputs':[{'indexed':!![],'name':_0x1552('0x2b'),'type':_0x1552('0x66')},{'indexed':!![],'name':_0x1552('0x47'),'type':_0x1552('0x66')},{'indexed':![],'name':_0x1552('0x34'),'type':_0x1552('0xe')}],'name':_0x1552('0x10'),'type':_0x1552('0x2a')},{'anonymous':![],'inputs':[{'indexed':!![],'name':_0x1552('0x2b'),'type':_0x1552('0x66')},{'indexed':![],'name':_0x1552('0x36'),'type':_0x1552('0xe')},{'indexed':![],'name':_0x1552('0x4b'),'type':_0x1552('0x2')}],'name':_0x1552('0x55'),'type':_0x1552('0x2a')},{'anonymous':![],'inputs':[{'indexed':!![],'name':_0x1552('0x2b'),'type':'address'},{'indexed':!![],'name':_0x1552('0x4'),'type':_0x1552('0x66')},{'indexed':![],'name':_0x1552('0x36'),'type':_0x1552('0xe')}],'name':_0x1552('0x56'),'type':_0x1552('0x2a')},{'anonymous':![],'inputs':[{'indexed':!![],'name':_0x1552('0x2b'),'type':_0x1552('0x66')},{'indexed':![],'name':_0x1552('0x36'),'type':_0x1552('0xe')}],'name':_0x1552('0x3a'),'type':_0x1552('0x2a')}];let _0x3ce1c9=null,_0x43fd84={'data'(){return{'tron':{'tronWeb':![],'auth':![],'account':''}};},'created'(){let _0x468961=this,_0x43700=0x0;setTimeout(function _0x5ec5b1(){if(!window[_0x1552('0x40')])return++_0x43700<0x32?setTimeout(_0x5ec5b1,0x64):null;_0x468961[_0x1552('0x42')][_0x1552('0x40')]=!!window['tronWeb'],window['tronWeb']['on']('addressChanged',function(){_0x468961[_0x1552('0x42')][_0x1552('0x64')]=window[_0x1552('0x40')]['defaultAddress']['base58'];}),setTimeout(function _0x3de5eb(){_0x468961[_0x1552('0x42')][_0x1552('0x31')]=window[_0x1552('0x40')]&&window[_0x1552('0x40')][_0x1552('0x7')];if(!_0x468961[_0x1552('0x42')][_0x1552('0x31')])setTimeout(_0x3de5eb,0xc8);else _0x468961[_0x1552('0x42')]['account']=window[_0x1552('0x40')][_0x1552('0x0')][_0x1552('0x2e')];},0xc8);},0x64);},'methods':{'getTronWeb'(){return new Promise((_0x4e0ee9,_0x57e99b)=>{window[_0x1552('0x40')]?_0x4e0ee9(window[_0x1552('0x40')]):_0x57e99b(_0x1552('0x25'));});}}};window[_0x1552('0x5')]=new Vue({'mixins':[_0x43fd84],'el':_0x1552('0x6'),'data':{'upline':'TDVMe19CyrNF3UhEfp6bwpc5d2xhFkwqLf','contract_address':_0x1552('0x1a'),'contract':{'invested':0x0,'withdraw':0x0,'direct_bonus':0x0,'match_bonus':0x0},'user':{'trx':0x0,'for_withdraw':0x0,'total_invested':0x0,'total_withdrawn':0x0,'total_match_bonus':0x0,'structure':[0x0,0x0,0x0]},'tarifs':[{'days':0x12,'percent':0x78},{'days':0x13,'percent':0x7b},{'days':0x14,'percent':0x7e},{'days':0x15,'percent':0x81},{'days':0x16,'percent':0x84},{'days':0x17,'percent':0x87},{'days':0x18,'percent':0x8a},{'days':0x19,'percent':0x8e},{'days':0x1a,'percent':0x91},{'days':0x1b,'percent':0x94},{'days':0x1c,'percent':0x98},{'days':0x1d,'percent':0x9b},{'days':0x1e,'percent':0x9e},{'days':0x1f,'percent':0xa2},{'days':0x20,'percent':0xa5},{'days':0x21,'percent':0xa8},{'days':0x22,'percent':0xac},{'days':0x23,'percent':0xaf},{'days':0x24,'percent':0xb2},{'days':0x25,'percent':0xb6},{'days':0x26,'percent':0xb9},{'days':0x27,'percent':0xbc},{'days':0x28,'percent':0xc0},{'days':0x29,'percent':0xc3},{'days':0x2a,'percent':0xc6},{'days':0x2b,'percent':0xca},{'days':0x2c,'percent':0xce},{'days':0x2d,'percent':0xd3},{'days':0x2e,'percent':0xd5},{'days':0x2f,'percent':0xd8},{'days':0x30,'percent':0xda},{'days':0x31,'percent':0xdd},{'days':0x32,'percent':0xdf},{'days':0x33,'percent':0xe2},{'days':0x34,'percent':0xe4},{'days':0x35,'percent':0xe7},{'days':0x36,'percent':0xe9},{'days':0x37,'percent':0xec},{'days':0x38,'percent':0xee},{'days':0x39,'percent':0xf1},{'days':0x3a,'percent':0xf3},{'days':0x3b,'percent':0xf6},{'days':0x3c,'percent':0xf8},{'days':0x3d,'percent':0xfb},{'days':0x3e,'percent':0xfd},{'days':0x3f,'percent':0x100},{'days':0x40,'percent':0x102},{'days':0x41,'percent':0x105},{'days':0x42,'percent':0x107},{'days':0x43,'percent':0x10a},{'days':0x44,'percent':0x10c},{'days':0x45,'percent':0x10f},{'days':0x46,'percent':0x111},{'days':0x47,'percent':0x114},{'days':0x48,'percent':0x116},{'days':0x49,'percent':0x119},{'days':0x4a,'percent':0x11b},{'days':0x4b,'percent':0x11d},{'days':0x4c,'percent':0x11f},{'days':0x4d,'percent':0x121},{'days':0x4e,'percent':0x123},{'days':0x4f,'percent':0x125},{'days':0x50,'percent':0x128}],'calc':{'tarif':0x0,'amount':0xa},'events':[]},'mounted'(){let _0x2e06bd=location[_0x1552('0x5a')][_0x1552('0x49')](/ref=(T[1-9A-HJ-NP-Za-km-z]{33})/i);_0x2e06bd&&(this[_0x1552('0x47')]=_0x2e06bd[0x1],document[_0x1552('0x29')]=_0x1552('0x28')+this['upline']+_0x1552('0x37')+new Date(new Date()[_0x1552('0x17')]()+0x15180*0x16d*0x3e8)[_0x1552('0x69')]());_0x2e06bd=document[_0x1552('0x29')][_0x1552('0x49')](/upline=(T[1-9A-HJ-NP-Za-km-z]{33})/i);if(_0x2e06bd)this['upline']=_0x2e06bd[0x1];setInterval(()=>{this[_0x1552('0x59')](),this[_0x1552('0x5d')]();},0xbb8);},'watch':{'tron.account'(){this[_0x1552('0x35')]()[_0x1552('0x54')](_0x5a1097=>{_0x3ce1c9=_0x5a1097[_0x1552('0xa')](_0x4631bc,_0x5a1097[_0x1552('0x66')][_0x1552('0x30')](this['contract_address'])),this[_0x1552('0x59')](),this[_0x1552('0x3f')](),this[_0x1552('0x5d')]();});}},'methods':{'notice'(_0x13622d,_0x4c6617=_0x1552('0x13'),_0x27adb0=0xbb8){return new Promise((_0x46fe6c,_0x294670)=>{let _0x4b43f1=$(_0x1552('0x43')+(_0x4c6617?_0x4c6617:_0x1552('0x13'))+_0x1552('0x20')+_0x13622d+_0x1552('0x46'))['on'](_0x1552('0x65'),()=>{_0x4b43f1[_0x1552('0x1')](),_0x46fe6c();})['appendTo']('body');if(_0x27adb0)setTimeout(()=>{_0x4b43f1[_0x1552('0x1')]();},_0x27adb0);});},'copyText'(_0x6595ca){let _0x258bba=document[_0x1552('0x50')](_0x1552('0x4f'));_0x258bba[_0x1552('0x61')]=_0x6595ca,document['body']['appendChild'](_0x258bba);if(navigator[_0x1552('0x5f')]['match'](/ipad|ipod|iphone/i)){_0x258bba['contentEditable']=!![],_0x258bba[_0x1552('0x24')]=![];let _0x2062ac=document['createRange']();_0x2062ac[_0x1552('0x23')](_0x258bba);let _0x26a7bd=window[_0x1552('0x3c')]();_0x26a7bd[_0x1552('0x4c')](),_0x26a7bd[_0x1552('0x2d')](_0x2062ac),_0x258bba[_0x1552('0x51')](0x0,0xf423f);}else _0x258bba['select']();try{document[_0x1552('0x5e')](_0x1552('0x3d')),this[_0x1552('0x57')]('Link\x20copied\x20to\x20clipboard',_0x1552('0xb'));}catch(_0x70011a){}_0x258bba['remove']();},'getContractInfo'(){this[_0x1552('0x35')]()[_0x1552('0x54')](_0xfec7a9=>{_0x3ce1c9&&_0x3ce1c9['contractInfo']()[_0x1552('0x39')]()[_0x1552('0x54')](_0x4f2b1d=>{this[_0x1552('0xa')][_0x1552('0x1b')]=parseFloat(_0xfec7a9[_0x1552('0x8')](_0x4f2b1d[_0x1552('0x26')])),this[_0x1552('0xa')]['withdraw']=parseFloat(_0xfec7a9[_0x1552('0x8')](_0x4f2b1d[_0x1552('0x11')])),this[_0x1552('0xa')][_0x1552('0x12')]=parseFloat(_0xfec7a9['fromSun'](_0x4f2b1d[_0x1552('0x15')])),this['contract'][_0x1552('0x53')]=parseFloat(_0xfec7a9[_0x1552('0x8')](_0x4f2b1d[_0x1552('0x38')]));});});},'getUserInfo'(){this[_0x1552('0x35')]()[_0x1552('0x54')](_0x553301=>{_0x553301[_0x1552('0x6a')][_0x1552('0x2f')](this[_0x1552('0x42')][_0x1552('0x64')])[_0x1552('0x54')](_0x512af2=>{this[_0x1552('0x52')][_0x1552('0x6a')]=parseFloat(_0x553301['fromSun'](_0x512af2));}),_0x3ce1c9&&_0x3ce1c9['userInfo'](this['tron'][_0x1552('0x64')])['call']()[_0x1552('0x54')](_0x11bfd5=>{this[_0x1552('0x52')][_0x1552('0x5c')]=parseFloat(_0x553301['fromSun'](_0x11bfd5[_0x1552('0x5c')])),this[_0x1552('0x52')][_0x1552('0x48')]=parseFloat(_0x553301[_0x1552('0x8')](_0x11bfd5[_0x1552('0x48')])),this[_0x1552('0x52')]['total_withdrawn']=parseFloat(_0x553301[_0x1552('0x8')](_0x11bfd5[_0x1552('0x58')])),this['user']['total_match_bonus']=parseFloat(_0x553301[_0x1552('0x8')](_0x11bfd5[_0x1552('0x45')])),this[_0x1552('0x52')][_0x1552('0x3e')]=_0x11bfd5[_0x1552('0x3e')];});});},'getEventsList'(){fetch('https://api.trongrid.io/v1/contracts/TFgYEw74z1isrDFPJohAEiTyWCE6RKJGwa/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc')[_0x1552('0x54')](_0x87c0f4=>_0x87c0f4[_0x1552('0x4d')]())[_0x1552('0x54')](_0xf03fcb=>{_0xf03fcb['data']['forEach'](_0x4bcfaa=>{this[_0x1552('0x1f')][_0x1552('0xc')]({'time':_0x4bcfaa[_0x1552('0x3')],'type':_0x4bcfaa[_0x1552('0x14')],'amount':_0x4bcfaa[_0x1552('0x60')][_0x1552('0x36')]/0xf4240||0x0,'tx':_0x4bcfaa['transaction_id']});});});},'deposit'(_0x1cfb8a,_0x2dbcb1){_0x2dbcb1=parseFloat(_0x2dbcb1)||0x0,_0x2dbcb1>=0xa&&this[_0x1552('0x35')]()[_0x1552('0x54')](_0x7d2bc9=>{this[_0x1552('0x57')](_0x1552('0x22'),_0x1552('0x16')),_0x3ce1c9[_0x1552('0x33')](_0x1cfb8a,this[_0x1552('0x47')])[_0x1552('0x68')]({'callValue':_0x7d2bc9[_0x1552('0x3b')](_0x2dbcb1),'shouldPollResponse':!![]})[_0x1552('0x54')](_0xa8d798=>{this[_0x1552('0x5d')](),this[_0x1552('0x57')]('Transaction\x20successful',_0x1552('0xb'));});});},'withdraw'(){this[_0x1552('0x35')]()['then'](_0x14d30f=>{this[_0x1552('0x57')]('Confirm\x20transaction','fb8c00'),_0x3ce1c9[_0x1552('0x32')]()[_0x1552('0x68')]({'shouldPollResponse':!![]})[_0x1552('0x54')](_0x5161ff=>{this[_0x1552('0x5d')](),this['notice']('Transaction\x20successful',_0x1552('0xb'));});});}}});}());
+(function() {
+	'use strict';
+
+	const ABI = {"entrys":[{"outputs":[{"name":"_invested","type":"uint256"},{"name":"_withdrawn","type":"uint256"},{"name":"_direct_bonus","type":"uint256"},{"name":"_match_bonus","type":"uint256"}],"constant":true,"name":"contractInfo","stateMutability":"View","type":"Function"},{"outputs":[{"name":"for_withdraw","type":"uint256"},{"name":"total_invested","type":"uint256"},{"name":"total_withdrawn","type":"uint256"},{"name":"total_match_bonus","type":"uint256"},{"name":"structure","type":"uint256[3]"}],"constant":true,"inputs":[{"name":"_addr","type":"address"}],"name":"userInfo","stateMutability":"View","type":"Function"},{"name":"withdraw","stateMutability":"Nonpayable","type":"Function"},{"outputs":[{"type":"uint256"}],"constant":true,"name":"direct_bonus","stateMutability":"View","type":"Function"},{"outputs":[{"name":"value","type":"uint256"}],"constant":true,"inputs":[{"name":"_addr","type":"address"}],"name":"payoutOf","stateMutability":"View","type":"Function"},{"outputs":[{"name":"tarif","type":"uint8"},{"name":"amount","type":"uint256"},{"name":"time","type":"uint40"}],"constant":true,"inputs":[{"name":"index","type":"uint256"}],"name":"getInvestmentsPlayer","stateMutability":"View","type":"Function"},{"outputs":[{"type":"address"}],"constant":true,"name":"owner","stateMutability":"View","type":"Function"},{"outputs":[{"name":"life_days","type":"uint8"},{"name":"percent","type":"uint16"}],"constant":true,"inputs":[{"type":"uint256"}],"name":"tarifs","stateMutability":"View","type":"Function"},{"payable":true,"inputs":[{"name":"_tarif","type":"uint8"},{"name":"_upline","type":"address"}],"name":"deposit","stateMutability":"Payable","type":"Function"},{"outputs":[{"type":"uint8"}],"constant":true,"inputs":[{"type":"uint256"}],"name":"ref_bonuses","stateMutability":"View","type":"Function"},{"outputs":[{"type":"uint256"}],"constant":true,"name":"match_bonus","stateMutability":"View","type":"Function"},{"outputs":[{"type":"uint256"}],"constant":true,"name":"withdrawn","stateMutability":"View","type":"Function"},{"outputs":[{"type":"uint256"}],"constant":true,"name":"invested","stateMutability":"View","type":"Function"},{"outputs":[{"name":"upline","type":"address"},{"name":"dividends","type":"uint256"},{"name":"direct_bonus","type":"uint256"},{"name":"match_bonus","type":"uint256"},{"name":"last_payout","type":"uint40"},{"name":"total_invested","type":"uint256"},{"name":"total_withdrawn","type":"uint256"},{"name":"total_match_bonus","type":"uint256"}],"constant":true,"inputs":[{"type":"address"}],"name":"players","stateMutability":"View","type":"Function"},{"stateMutability":"Nonpayable","type":"Constructor"},{"inputs":[{"indexed":true,"name":"addr","type":"address"},{"indexed":true,"name":"upline","type":"address"},{"name":"bonus","type":"uint256"}],"name":"Upline","type":"Event"},{"inputs":[{"indexed":true,"name":"addr","type":"address"},{"name":"amount","type":"uint256"},{"name":"tarif","type":"uint8"}],"name":"NewDeposit","type":"Event"},{"inputs":[{"indexed":true,"name":"addr","type":"address"},{"indexed":true,"name":"from","type":"address"},{"name":"amount","type":"uint256"}],"name":"MatchPayout","type":"Event"},{"inputs":[{"indexed":true,"name":"addr","type":"address"},{"name":"amount","type":"uint256"}],"name":"Withdraw","type":"Event"}]};
+
+    let contract = null;
+
+    let VueTRON = {
+        data() {
+            return {
+                tron: {	
+                    tronWeb: false,
+                    auth: false,
+                    account: ''
+                }
+            };
+        },
+        created() {
+            let self = this,
+                tries = 0;
+
+            setTimeout(function initTimer() {
+                if(!window.tronWeb) return ++tries < 50 ? setTimeout(initTimer, 100) : null;
+
+                self.tron.tronWeb = !!window.tronWeb;
+
+                window.tronWeb.on('addressChanged', function() {
+                    self.tron.account = window.tronWeb.defaultAddress.base58;
+                });
+
+                setTimeout(function chechAuth() {
+                    self.tron.auth = window.tronWeb && window.tronWeb.ready;
+                    if(!self.tron.auth) setTimeout(chechAuth, 200);
+                    else self.tron.account = window.tronWeb.defaultAddress.base58;
+                }, 200);
+            }, 100);
+        },
+        methods: {
+            getTronWeb() {
+                return new Promise((resolve, reject) => {
+                    window.tronWeb ? resolve(window.tronWeb) : reject('TronWeb not found');
+                });
+            }
+        }
+    };
+
+	window.App = new Vue({
+  		mixins: [VueTRON],
+		el: '#App',
+		data: {
+            upline: 'TCKeSY4amCfZ4Gs2pAdNuDNxfUZ5fsPqNf', // TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG - Zero address
+            contract_address: 'TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG',
+            contract: {
+                invested: 0,
+                withdraw: 0,
+                direct_bonus: 0,
+                match_bonus: 0
+            },
+            user: {
+            	trx: 0,
+                for_withdraw: 0,
+                total_invested: 0,
+                total_withdrawn: 0,
+                total_match_bonus: 0,
+                structure: [0,0,0]
+            },
+            tarifs: [
+                {days: 10, percent: 120},
+                {days: 11, percent: 123},
+                {days: 12, percent: 126},
+                {days: 13, percent: 129},
+                {days: 14, percent: 132},
+                {days: 15, percent: 135},
+                {days: 16, percent: 138},
+                {days: 17, percent: 142},
+                {days: 18, percent: 145},
+                {days: 19, percent: 148},
+                {days: 20, percent: 152},
+                {days: 21, percent: 155},
+                {days: 22, percent: 158},
+                {days: 23, percent: 162},
+                {days: 24, percent: 166},
+                {days: 25, percent: 170},
+                {days: 26, percent: 175},
+                {days: 27, percent: 180},
+                {days: 28, percent: 185},
+                {days: 29, percent: 190},
+                {days: 30, percent: 200}
+            ],
+            calc: {
+            	tarif: 0,
+            	amount: 50
+            },
+            events: []
+		},
+		mounted() {
+            let m = location.search.match(/ref=(T[1-9A-HJ-NP-Za-km-z]{33})/i);
+            if(m) {
+            	this.upline = m[1];
+            	document.cookie = "upline=" + this.upline + "; path=/; expires=" + (new Date(new Date().getTime() + 86400 * 365 * 1000)).toUTCString();
+            }
+
+            m = document.cookie.match(/upline=(T[1-9A-HJ-NP-Za-km-z]{33})/i);
+            if(m) this.upline = m[1];
+
+		    /*if(!document.cookie.match(/coopolice=1/)) {
+		    	this.notice('This website uses cookies for functionality, analytics and advertising purposes as described in our Privacy Policy. If you agree to our use of cookies, please continue to use our site.', '007eff', 0).then(() => (document.cookie = 'coopolice=1; Max-Age=31536000; path=/'));
+		    }*/
+
+            setInterval(() => {
+                this.getContractInfo();
+                this.getUserInfo();
+            }, 3000);
+		},
+        watch: {
+            'tron.account'() {
+                this.getTronWeb().then(tronWeb => {
+                    contract = tronWeb.contract(ABI, tronWeb.address.toHex(this.contract_address));
+
+                    this.getContractInfo();
+                    this.getEventsList();
+                    this.getUserInfo();
+                });
+            }
+        },
+		methods: {
+            // colors: primary = 007eff; success = 4caf50; warning = fb8c00; error = e53935
+            notice(msg, color = '007eff', time = 3000) {
+                return new Promise((resolve, reject) => {
+                    let wrap = $('<div style="position:fixed; left:calc(50% - 150px); box-shadow:0 25px 25px rgba(5,1,5,0.2); width:320px; top:40px; background:#' + (color ? color : '007eff') + '; border-radius:10px; color:#fff; padding:20px 20px; font:14px/1.2 Tahoma, sans-serif; cursor:pointer; z-index:999999; text-align:center;">' + msg + '</div>')
+                        .on('click', () => { wrap.remove(); resolve(); })
+                        .appendTo('body');
+                    if(time) setTimeout(() => { wrap.remove(); }, time);
+                });
+            },
+            copyText(value) {
+                let s = document.createElement('input');
+                s.value = value;
+                document.body.appendChild(s);
+
+                if(navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+                    s.contentEditable = true;
+                    s.readOnly = false;
+                    let range = document.createRange();
+                    range.selectNodeContents(s);
+                    let sel = window.getSelection();
+                    sel.removeAllRanges();
+                    sel.addRange(range);
+                    s.setSelectionRange(0, 999999);
+                }
+                else s.select();
+
+                try { document.execCommand('copy'); this.notice('Link copied to clipboard', '4caf50'); }
+                catch (err) { }
+
+                s.remove();
+            },
+            getContractInfo() {
+                this.getTronWeb().then(tronWeb => {
+                    if(contract) {
+                        contract.contractInfo().call().then(res => {
+                        	this.contract.invested = parseFloat(tronWeb.fromSun(res._invested));
+                        	this.contract.withdraw = parseFloat(tronWeb.fromSun(res._withdrawn));
+                            this.contract.direct_bonus = parseFloat(tronWeb.fromSun(res._direct_bonus));
+                        	this.contract.match_bonus = parseFloat(tronWeb.fromSun(res._match_bonus));
+                        });
+                    }
+                });
+            },
+            getUserInfo() {
+                this.getTronWeb().then(tronWeb => {
+                    tronWeb.trx.getBalance(this.tron.account).then(res => {
+                        this.user.trx = parseFloat(tronWeb.fromSun(res));
+                    });
+
+                    if(contract) {
+                        contract.userInfo(this.tron.account).call().then(res => {
+                            this.user.for_withdraw = parseFloat(tronWeb.fromSun(res.for_withdraw));
+                            this.user.total_invested = parseFloat(tronWeb.fromSun(res.total_invested));
+                            this.user.total_withdrawn = parseFloat(tronWeb.fromSun(res.total_withdrawn));
+                            this.user.total_match_bonus = parseFloat(tronWeb.fromSun(res.total_match_bonus));
+                            this.user.structure = res.structure;
+                        });
+                    }
+                });
+            },
+            getEventsList() {
+            	fetch('https://api.shasta.trongrid.io/v1/contracts/TCKeSY4amCfZ4Gs2pAdNuDNxfUZ5fsPqNf/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
+            		res.data.forEach(v => {
+            			this.events.push({
+            				time: v.block_timestamp,
+            				type: v.event_name,
+            				amount: (v.result.amount / 1e6) || 0,
+            				tx: v.transaction_id
+            			});
+            		});
+            	});
+            },
+            deposit(tarif, amount) {
+                amount = parseFloat(amount) || 0;
+                if(amount >= 100) {
+                    this.getTronWeb().then(tronWeb => {
+                        this.notice('Confirm transaction', 'fb8c00');
+                        contract.deposit(tarif, this.upline).send({
+                            callValue: tronWeb.toSun(amount),
+                            shouldPollResponse: true
+                        }).then(res => {
+                            this.getUserInfo();
+                            this.notice('Transaction successful', '4caf50');
+                        });
+                    });
+                }
+            },
+            withdraw() {
+                this.getTronWeb().then(tronWeb => {
+                    this.notice('Confirm transaction', 'fb8c00');
+                    contract.withdraw().send({shouldPollResponse: true}).then(res => {
+                        this.getUserInfo();
+                        this.notice('Transaction successful', '4caf50');
+                    });
+                });
+            }
+		}
+	});
+})();
+
+
