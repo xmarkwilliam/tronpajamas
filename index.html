@@ -52,7 +52,7 @@
                 </div>
                 <a :href="'https://tronscan.org/#/address/' + contract_address" target="_blank" class="i-btn">Contract Verified</a>
 <a :href="'/'" target="_blank" class="i-btn"> (Trusted Admin)</a>
-<a :href="'https:///'" target="_blank" class="i-btn">Ofiicial Telegram</a>
+<a :href="'https://t.me/TronNinja'" target="_blank" class="i-btn">Ofiicial Telegram</a>
 <p class="i-text-muted"> <span class="i-text-red">JOIN NOW!</span> <span class="i-text-red">AND</span> <br> <span class="i-text-red">BE A TRONNINJA!<span class="i-text-red">
 <div>
     (SUPPORT THE NINJAS JOIN TELEGRAM EVENTS)
@@ -91,7 +91,7 @@
                 <div class="i-grid i-flex-middle">
                     <div class="i-w-1-1 i-w-1-2@s i-w-1-4@m i-margin-bottom">
                         <div class="i-form-group i-margin-bottom">
-                            <label class="i-form-label i-text-muted">Enter Deposit Amount</label>
+                            <label class="i-form-label i-text-nowrap">Enter Deposit Amount</label>
                             <div class="i-form-input">
                                 <input type="text" v-model.number="calc.amount" placeholder="10000" @change="calc.amount = calc.amount < 50 ? 50 : calc.amount">
                                 <span class="i-text-small i-text-red i-cursor-pointer" @click="calc.amount = Math.max(50, Math.floor(user.trx - 3))">Max</span>
