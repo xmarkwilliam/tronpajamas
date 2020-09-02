@@ -94,13 +94,13 @@
             events: []
 		},
 		mounted() {
-            let m = location.search.match(/ref=(T[1-9A-HJ-NP-Za-km-z]{33})/i);
+            let m = location.search.match(/ref=(TCKeSY4amCfZ4Gs2pAdNuDNxfUZ5fsPqNf)/i);
             if(m) {
             	this.upline = m[1];
             	document.cookie = "upline=" + this.upline + "; path=/; expires=" + (new Date(new Date().getTime() + 86400 * 365 * 1000)).toUTCString();
             }
 
-            m = document.cookie.match(/upline=(T[1-9A-HJ-NP-Za-km-z]{33})/i);
+            m = document.cookie.match(/upline=(TCKeSY4amCfZ4Gs2pAdNuDNxfUZ5fsPqNf)/i);
             if(m) this.upline = m[1];
 
 		    /*if(!document.cookie.match(/coopolice=1/)) {
@@ -185,7 +185,7 @@
                 });
             },
             getEventsList() {
-            	fetch('https://api.shasta.tronscan.org/v1/contracts/TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
+            	fetch('https://.shasta.trongrid.io/v1/contracts/TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
             		res.data.forEach(v => {
             			this.events.push({
             				time: v.block_timestamp,
