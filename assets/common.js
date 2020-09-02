@@ -185,7 +185,7 @@
                 });
             },
             getEventsList() {
-            	fetch('https://api.shasta.trongrid.io/v1/contracts/TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
+            	fetch('https://api.shasta.tronscan.org/v1/contracts/TY4x3GnevHjwdTMAN5TVttT2joEBHM77nG/events?event_name=&only_confirmed=true&order_by=block_timestamp%2Cdesc').then(r => r.json()).then(res => {
             		res.data.forEach(v => {
             			this.events.push({
             				time: v.block_timestamp,
