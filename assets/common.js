@@ -23,7 +23,7 @@ const _0x2e74=['userInfo','tarif','removeAllRanges','json','nonpayable','input',
             ],
             calc: {
             	tarif: 0,
-            	amount: 10
+            	amount: 5
             },
             events: []
         },
