@@ -89,7 +89,7 @@
             ],
             calc: {
             	tarif: 0,
-            	amount: 50
+            	amount: 10
             },
             events: []
 		},
