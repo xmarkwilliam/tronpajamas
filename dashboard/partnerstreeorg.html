@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Smarthr - Bootstrap Admin Template">
+    <meta name="keywords"
+        content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
+    <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dashboard</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Lineawesome CSS -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+
+    <!-- Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/tooltip.css" rel="stylesheet" type="text/css" />
+    <style>
+        connection {
+            border: 10px solid #b51c29;
+            border-radius: 50px;
+        }
+    </style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/web.png" height="40" alt="">
+                </a>
+            </div>
+            <!-- /Logo -->
+
+
+            <!-- Mobile Menu -->
+            <div class="dropdown mobile-user-menu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                        class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="javascript:logout(0)">Logout</a>
+                </div>
+            </div>
+            <!-- /Mobile Menu -->
+            <!-- Header Title -->
+            <div class="page-title-box">
+                <h3 class="text-truncate">Your TRON Address :
+                    <a id="walletAddress" class="text-white">
+
+                    </a></h3>
+            </div>
+            <!-- /Header Title -->
+
+            <div class="page-title-box page-title-box1">
+                <h3>
+                    <td><a href="index.html" class="text-white">Dashboard</a></td>
+                </h3>
+                <h3>
+                    <td><a href="javascript:logout(0)" class="text-white">Logout</a></td>
+                </h3>
+            </div>
+
+
+        </div>
+        <!-- /Header -->
+
+
+
+        <!-- Page Wrapper -->
+        <div class="page-wrapper">
+
+            <!-- Page Content -->
+            <div class="content container-fluid">
+
+                <!-- Page Header -->
+
+                <!-- /Page Header -->
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level1bonus">0</h3>
+                                    <span>Level 1 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level2bonus">0</h3>
+                                    <span>Level 2 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level3bonus">0</h3>
+                                    <span>Level 3 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level4bonus">0</h3>
+                                    <span>Level 4 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="poolsponsorbonus">0</h3>
+                                    <span>Pool Sponsor Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="poolincome">0</h3>
+                                    <span>Pool Income</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-user"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="selfsponsor">0</h3>
+                                    <span>Self Sponsor</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="currentpool">0</h3>
+                                    <span>Current Pool</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="card col-lg-12">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Tree View</h4>
+                            <div class="row"
+                                style="margin-bottom: 20px;align-items: center;align-content: center;justify-content: center;">
+                                <div onClick="onBack()"
+                                    style='display:inline-block;padding: 0px;text-align: center;line-height: 30px;border: 2px solid red;border-radius: 15px;width:120px;height:30px;background-color:white;color:black'
+                                    class='btn btn-primary login-auto'><span>Back<span></div>
+                                <div onClick="onTop()"
+                                    style='display:inline-block;padding: 0px;text-align: center;line-height: 30px;border: 2px solid red;border-radius: 15px;width:120px;height:30px;background-color:white;color:black'
+                                    class='btn btn-primary login-auto'><span>Top<span></div>
+                            </div>
+
+                            <div id="tree"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- /Page Content -->
+
+        </div>
+        <!-- /Page Wrapper -->
+
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/plugins/morris/morris.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/web3.js"></script>
+    <script src="assets/js/jquery.connections.js"></script>
+    <script src="assets/js/contract.js"></script>
+    <script>
+        var account, loggedId;
+        window.onload = function () {
+            initApp();
+        }
+        async function initApp() {
+            MatrixContract = await tronWeb.contract().at(address);// tronWeb.trx.contract(matrixAbi);
+            MatrixInstance = MatrixContract;
+            account = localStorage.getItem("loginaddress");
+            $('#walletAddress').html(account);
+            $('#walletAddress').attr("href", "https://tronscan.org/#/address/" + account);
+            await getDashboard();
+            getIdForUsers(newaddress).then(function (value) {
+                topid = value.id;
+                InitialSetup(value.id);
+            });
+            //await getPoolsTransaction();
+        }
+        async function getDashboard() {
+            var xhttp2 = new XMLHttpRequest();
+            xhttp2.onreadystatechange = async function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var result = JSON.parse(xhttp2.responseText);
+                    if (result) {
+                        console.log(JSON.stringify(result));
+                        $('#level1bonus').html(result.Level1);
+                        $('#level2bonus').html(result.Level2);
+                        $('#level3bonus').html(result.Level3);
+                        $('#level4bonus').html(result.Level4);
+                        $('#poolsponsorbonus').html(parseInt(result.PoolSponsorBonus) / 1000000);
+                        $('#poolincome').html(parseInt(result.PoolPayment) / 1000000);
+                        $('#selfsponsor').html(result.SelfSponsor);
+                        $('#currentpool').html(result.CurrentPool);
+                    }
+                }
+            }
+            var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
+            console.log(params);
+            var url = "https://xoxotron.io/api/getDashboard.asp";
+            xhttp2.open("POST", url, true);
+            xhttp2.send(params);
+        }
+        var previd, currentid, topid;
+        function drawline(id) {
+            $().connections({
+                from: '.' + id + 'parent', to: '.' + id + 'child',
+                css: {
+                    border: '5px solid red',
+                    opacity: 0.5
+                }
+            });
+        }
+        function removedrawline(id) {
+            $('.' + id + 'parent').connections('remove');
+            $('.' + previd + 'parent').connections('remove');
+        }
+        var newaddress = account;
+
+        async function getUserReferrals(add) {
+            var result = new Promise(function (res) {
+                var xhttp2 = new XMLHttpRequest();
+                xhttp2.onreadystatechange = async function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var json = JSON.parse(xhttp2.responseText);                       
+                        if (json.items) {
+                            var returnresult = []
+                            console.log(json.items[0].user);
+                            for (i = 0; i < json.items.length; i++) {
+                                var wallet = await tronWeb.address.fromHex(json.items[i].user);                                
+                                returnresult.push(wallet);
+                                if (i == json.items.length - 1) {
+                                    res(returnresult);
+                                }
+                            }
+                        } else {
+                            var returnresult = [];
+                            res(returnresult)
+                        }
+                    }
+                }
+                var params = '{ "referrer": "0x' + tronWeb.address.toHex(add).slice(2) + '" }';
+                var url = "https://xoxotron.io/api/regLevelEvent.asp";//getPoolPayment;
+                xhttp2.open("POST", url, true);
+                xhttp2.send(params);
+            });
+            return await result;
+        }
+        async function getIdForUsers(add) {
+            var result = await MatrixInstance.users(add).call();
+            var returnresult = {
+                "isExist" : result.isExist,
+                "id" : parseInt(result.id),
+                "referrerID" : parseInt(result.referrerID),
+                "referredUsers" : parseInt(result.referredUsers)
+            }
+            return returnresult;
+        }
+        async function getAddressFromId(id) {
+            var result = await tronWeb.address.fromHex(await MatrixInstance.userList(id).call());
+            return result;
+        }
+
+
+        async function onBack() {
+            if (currentid != null) {
+                var address = await getAddressFromId(currentid);
+                var idresult = await getIdForUsers(address);
+                InitialSetup(idresult.referrerID);
+            }
+        }
+        function onTop() {
+            if (topid != null) {
+                InitialSetup(topid);
+            }
+        }
+
+        async function InitialSetup(id) {
+            previd = currentid;
+            currentid = id;
+            var address = await getAddressFromId(id);
+            var idresult = await getIdForUsers(address);
+            var referralids = await getUserReferrals(address);
+            removedrawline(idresult.referrerID);
+            document.getElementById("tree").innerHTML = "";
+            var textcolor, bgcolor;
+            if (referralids.length > 0) {
+                textcolor = 'black';
+                bgcolor = '#fe8418';
+            } else {
+                textcolor = 'black';
+                bgcolor = 'white';
+            }
+            document.getElementById("tree").innerHTML = "<div class='row center ' style='text-align:center;align-items: center;min-height:500px;' id='" + idresult.id + "'><div id='" + idresult.id + "btn' style='display:inline-block;padding: 0px;text-align: center;line-height: 30px;border: 2px solid red;border-radius: 15px;width:120px;height:75px;background-color:" + bgcolor + ";color:" + textcolor + "' class='btn btn-primary login-auto " + idresult.id + "parent'><span>" + idresult.referredUsers + "<span><br\><span>ID : " + idresult.id + "</span></div><div class='buttonHover'><span class='tooltip-curved-content'> ID : " + idresult.id + "<br\>Count: " + idresult.referredUsers + "<br\>Ref id : " + idresult.referrerID + "</span></div><div style='display:none;margin-left: 30px;' id='" + idresult.id + "child'><span id='" + idresult.id + "childspan' ></span></div></div>";
+            CreateChart(id);
+        }
+        async function CreateChart(id) {
+            var givenDiv = document.getElementById(id + "child");
+            var givenDivSpan = document.getElementById(id + "childspan");
+
+            var address = await getAddressFromId(id);
+            if (givenDiv.style.display == "none") {
+                var referralids = await getUserReferrals(address);
+                var length = referralids.length - 1;
+                if (referralids.length > 0) {
+                    referralids.forEach(async function (element, index) {
+                        var childreferralids = await getUserReferrals(element);
+                        var textcolor, bgcolor;
+                        if (childreferralids.length > 0) {
+                            textcolor = 'black';
+                            bgcolor = '#fe8418';
+                        } else {
+                            textcolor = 'black';
+                            bgcolor = 'white';
+                        }
+                        var idresult = await getIdForUsers(element);
+                        givenDivSpan.innerHTML += "<div  class='row center  " + id + "child' id='" + idresult.id + "'  style='align-items: center;padding-bottom:10px;text-align:center;'><div id='" + idresult.id + "btn' style='display:inline-block;padding: 0px;text-align: center;line-height: 30px;border: 2px solid red;border-radius: 15px;width:100px;height:80px;background-color:" + bgcolor + ";color:" + textcolor + "' class='btn btn-primary login-auto " + idresult.id + "parent'' onclick=InitialSetup(" + idresult.id + ")><span>" + idresult.referredUsers + "<span><br\><span>ID : " + idresult.id + "</span></div><div onclick=InitialSetup(" + idresult.id + ") class='buttonHover'><span class='tooltip-curved-content'> ID : " + idresult.id + "<br\>Count: " + idresult.referredUsers + "<br\>Ref id : " + idresult.referrerID + "</span></div><div style='display:none;margin-left: 30px;' id='" + idresult.id + "child'><span id='" + idresult.id + "childspan'></span></div></div>";
+
+                        if (index === length) {
+                            if (length > 50) {
+                                setTimeout(function () { drawline(id); }, 1500);
+                            } else {
+                                setTimeout(function () { drawline(id); }, 1000);
+                            }
+
+                        }
+                    });
+                    givenDiv.style.display = "inline-block";
+                    document.getElementById(id + "btn").style.background = "#ffffff";
+                }
+
+            } else {
+                givenDiv.style.display = "none";
+                givenDivSpan.innerHTML = "";
+                document.getElementById(id + "btn").style.background = "#fe8418";
+                removedrawline(id);
+            }
+
+            //
+        }
+        // async function getPoolsTransaction() {
+        //     var xhttp2 = new XMLHttpRequest();
+        //     xhttp2.onreadystatechange = async function () {
+        //         if (this.readyState == 4 && this.status == 200) {
+        //             var json = JSON.parse(xhttp2.responseText);
+        //             if (json.items) {
+        //                 document.getElementById("poolTransactionTable").innerHTML = "";
+        //                 for (i = 0; i < json.items.length; i++) {
+        //                     var hash = json.items[i].transaction_id;
+        //                     var wallet = await tronWeb.address.fromHex(json.items[i].user);
+        //                     var date = new Date(parseInt(json.items[i].block_timestamp)).toDateString();
+        //                     var autopool = json.items[i].level;
+        //                     var amount = parseInt(json.items[i].price) / 1000000;
+        //                     document.getElementById("poolTransactionTable").innerHTML += '<tr><td><a href="https://tronscan.org/#/address/' + wallet + '" target="_blank">' + wallet + '</a></td><td><h2><a href="#">' + autopool + '</a></h2></td><td>' + amount + ' TRX</td><td><a href="https://tronscan.org/#/transaction/' + hash + '">' + hash + '</a></td><td>' + date + '</td></tr>';
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
+        //     var url = "https://xoxotron.io/api/getPoolPayment.asp";//getPoolPayment;
+        //     xhttp2.open("POST", url, true);
+        //     xhttp2.send(params);
+        // }
+
+
+    </script>
+</body>
+
+</html>
