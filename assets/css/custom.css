@@ -1,0 +1,131 @@
+.btn-gradient-orange.btn-glow {
+    -webkit-box-shadow: 0 0 12px 0 #fd2828  !important;
+    box-shadow: 0 0 12px 0 #fd2828  !important;
+}
+
+
+
+img.iconss {
+    width: 25% !important;
+    float: left !important;
+}
+
+h2.h2t {
+    text-align: left;
+    padding-left: 105px;
+    font-size: 27px !important;
+}
+
+.exchange-listing .listing .col:before {
+    display: none !important;
+}
+
+
+h2.title.animated2 {
+    color: #00ffcd;
+    font-size: 75px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 7px;
+}
+
+section#about {
+    background-image: url(storage/app/media/image3.jpg) !important;
+}
+
+.card-header.text-center.mx-auto {
+    background-color: #CC4125;
+    margin-left: inherit;
+    margin-right: inherit;
+}
+
+.card-bgcolor {
+    background-color: #05d4ab !important;
+    -webkit-box-shadow: 1px 6px 28px -4px rgba(0,255,205,0.37);
+    -moz-box-shadow: 1px 6px 28px -4px rgba(0,255,205,0.37);
+    box-shadow: 1px 6px 28px -4px rgba(0,255,205,0.37);
+}
+
+h1.pricing-card-title {
+    font-size: 18px;
+}
+
+h4.alert.bg-white.text-primary {
+    font-size: 19px;
+    color: #05d4ab !important;
+}
+
+h3.card-title.font-weight-bold.text-white {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    font-size: 29px;
+    margin-bottom: 1px !important;
+}
+
+h4.alert.bg-white.text-primary {
+    font-size: 19px;
+    color: #05d4ab !important;
+    border-left: 8px solid #CC4125;
+    border-right: 8px solid #CC4125;
+    border-radius: 0px !important;
+    border-left-width: 8px;
+}
+
+.bg-white {
+    background-color: #014235!important;
+}
+
+h4.title-right {
+    color: #00ffcd !important;
+    font-family: bebas neue;
+    letter-spacing: 2px;
+    font-size: 33px;
+    border-bottom: 1px solid #00ffcd;
+    text-align: right;
+}
+
+
+svg#loader {
+    background: #032735;
+}
+
+/*img.title-right {
+    width: 80%;
+}*/
+
+span.greenblack {
+    color: #000;
+    background-color: #00ffcd;
+    padding-left: 14px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+span.whiteblack {
+    color: #000;
+    background-color: #00ffcd;
+    padding-left: 14px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+span.whiteblack {
+    color: #000;
+    background-color: #FFF;
+    padding-left: 14px;
+    padding-right: 10px;
+    border-radius: 9px;
+    padding-top: 9px;
+    padding-bottom: 7px;
+    font-weight: 600;
+}
+
+.text-dark2 {
+    width: 500px;
+    margin: 0 auto;
+}
+
+img.levels {
+    width: 90%;
+}
