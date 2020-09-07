@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DivinePowerTron</title>
+    <!--Google Fonts-->
+
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
+    <!--Font icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+    <!-- END VENDOR CSS-->
+    <!-- END CRYPTO CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/template-counter.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END Custom CSS-->
+    <script src="https://divinepower.netlify.app/dashboard/assets/js/jquery.min.js"></script>
+
+    <style>
+        .card-title {
+            font-size: 15px;
+            font-family: "roboto", sans-serif;
+            font-weight: 500;
+            color: #212229;
+        }
+
+        .tabs-div .tab-content {
+            background-color: #A34FFE;
+        }
+
+        /*------ Card -------*/
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            border-radius: 3px;
+            background-color: #fff;
+            word-wrap: break-word;
+            border: 1px solid #e2ebf7 !important;
+            box-shadow: 0 0 3px rgba(31, 30, 47, .05);
+            margin-bottom: 10px;
+        }
+
+        .card>hr {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        .card>.list-group:first-child .list-group-item:first-child {
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+        }
+
+        .card>.list-group:last-child .list-group-item:last-child {
+            border-bottom-right-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+
+        .card-body {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 1.5rem;
+        }
+
+        .text-black {
+            color: black;
+        }
+
+
+        .card-subtitle {
+            margin-top: -0.75rem;
+            margin-bottom: 0;
+        }
+
+        .card-text:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-link:hover {
+            text-decoration: none;
+        }
+
+        .card-link+.card-link {
+            margin-left: 1.5rem;
+        }
+
+        .card-header {
+            padding: 1 rem;
+            margin-bottom: 0;
+            background-color: transparent;
+            border-bottom: 1px solid #eaf0f7;
+        }
+
+        .card-header+.list-group .list-group-item:first-child {
+            border-top: 0;
+        }
+
+        .card-footer {
+            padding: 1.5rem 1.5rem;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-top: 1px solid #eaf0f7;
+        }
+
+        .card-footer:last-child {
+            border-radius: 0 0 calc(3px - 1px) calc(3px - 1px);
+        }
+
+        .card-header-tabs {
+            margin-right: -0.75rem;
+            margin-bottom: -1.5rem;
+            margin-left: -0.75rem;
+            border-bottom: 0;
+        }
+
+        .card-header-pills {
+            margin-right: -0.75rem;
+            margin-left: -0.75rem;
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1.25rem;
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: calc(3px - 1px);
+        }
+
+        .card-img-top {
+            width: 100%;
+            border-top-left-radius: calc(3px - 1px);
+            border-top-right-radius: calc(3px - 1px);
+        }
+
+        .card-img-bottom {
+            width: 100%;
+            border-bottom-right-radius: calc(3px - 1px);
+            border-bottom-left-radius: calc(3px - 1px);
+        }
+
+        .card-deck {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .card-deck .card {
+            margin-bottom: 0.75rem;
+        }
+
+        .card-group {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .card-shadow-0 {
+            box-shadow: none !important;
+        }
+
+        .card-group>.card {
+            margin-bottom: 0.75rem;
+        }
+
+        .card-columns .card {
+            margin-bottom: 1.5rem;
+        }
+
+        /*------ Card -------*/
+
+        .bgcolor-custom {
+            background-color: #4084eb;
+        }
+
+
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-bgcolor {
+            background-color: #05d4ab !important;
+        }
+
+        .card p {
+            margin-bottom: 0px;
+        }
+
+        .text-dark {
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .head-area .head-content {
+            background: #1c0150 url('assets/img/bg1.png') top right fixed no-repeat;
+            background-size: cover;
+        }
+
+        .timer {
+            background: #FE4004;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 4vh;
+            font-family: "Bebas Neue";
+            margin: 30px 0;
+            color: #fff;
+        }
+
+        .launching {
+            color: #fff;
+            font-family: "Bebas Neue";
+            margin: 10px 0 -25px;
+            font-size: 5vh;
+        }
+
+        svg#loader {
+            background: #032735;
+        }
+
+        .head-area .head-content {
+            background: #1c0150 url('assets/img/bg1.png') top right fixed no-repeat;
+            background-size: cover;
+        }
+
+        iframe {
+            width: 640px;
+            height: 360px;
+            text-align: center;
+            margin: 0 auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
+        .head-area .head-content {
+            background: #1c0150 url('assets/img/bg1.png') top right fixed no-repeat;
+            background-size: cover;
+            background-position: top right;
+            /**background-color: black;**/
+        }
+
+        .btn-gradient-orange {
+            -webkit-transition: 0.5s;
+            -o-transition: 0.5s;
+            -moz-transition: 0.5s;
+            transition: 0.5s;
+            background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #fd2828 90%);
+            background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #dd167f 90%);
+            background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #dd167f 90%);
+            background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #dd167f 90%);
+            background-position: left center;
+            -webkit-background-size: 200% auto;
+            background-size: 200% auto;
+            border: 0;
+            color: #FFFFFF;
+        }
+
+        .btn-gradient-orange.btn-glow {
+            -webkit-box-shadow: 0 0 12px 0 #FF5F2B;
+            box-shadow: 0 0 12px 0 #FF5F2B;
+            margin: 8px;
+            padding: 10px 25px;
+            font-size: 1.7vh;
+        }
+
+        @media (max-width: 575.98px) {
+
+            .head-area .head-content {
+                min-height: 660px;
+            }
+
+            .img-fluid,
+            .img-thumbnail {
+                max-width: 80%;
+                height: auto;
+            }
+
+            .img-fluid,
+            .img-thumbnail {
+                max-width: 80%;
+                height: auto;
+            }
+
+            .head-area .head-content .container 
+
+            .timer {
+                background: #FE4004;
+                padding: 0px 20px;
+                border-radius: 10px;
+                font-size: 37px;
+                font-family: "Bebas Neue";
+                margin: 30px 0;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+                text-align: center;
+                margin: 0 auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-top: 30px;
+            }
+
+            .btn-gradient-orange.btn-glow {
+                -webkit-box-shadow: 0 0 12px 0 #FF5F2B;
+                box-shadow: 0 0 12px 0 #FF5F2B;
+                margin: 8px;
+                padding: 10px 25px;
+                font-size: 1.7vh;
+                width: calc(50% - 30px);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 1460px;
+            }
+        }
+    </style>
+
+</head>
+
+<body class=" 1-column   page-animated template-counter" data-menu-open="hover" data-menu="">
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('assets/img/bg1.png');">
+            <div class="wrap-login100 p-t-70 p-b-30">
+                <div class="login100-form validate-form">
+                    <div class="login100-form-avatar">
+                        <a href="dashboard/dashboard.html"><img src="dashboard/assets/img/tron3.png" alt="autoxify"></a>
+                    </div>
+
+                    <span class="login100-form-title p-t-20 p-b-45">
+                        For Automatic login sign into your account with below following wallets:
+                        <div class="mt-3"><img src="assets/img/tronlink.png" class="img-fluid" onclick="autoLogin()"></div>
+                    </span>
+
+                    <div class="wrap-input100 validate-input m-b-10" data-validate="Username is required">
+                        <input class="input100" type="text" name="username" id="email"
+                            placeholder="Enter your Tron address">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-user"></i>
+                        </span>
+                    </div>
+
+                    <div class="container-login100-form-btn p-t-10">
+                        <button class="login100-form-btn" onclick="loginwithID($('#email').val())">
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="text-center w-full p-t-25 p-b-50">
+                        <a href="register.html" class="txt1">
+                            Don't have an account? Register here
+                        </a>
+                    </div>
+
+                    <div class="text-center w-full">
+                        <a class="txt1" href="#" id="contractAddress">
+                            Smart Contract :
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- BEGIN VENDOR JS-->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone.min.js"></script>
+    <script src="dashboard/assets/js/web3.js"></script>
+    <script src="dashboard/assets/js/contract.js"></script>
+    <script>
+        $(function () {
+            var time = moment.tz("2020-08-20 18:30:00", "UTC");
+            $('div.timer').countdown(time.toDate(), function (event) {
+                var $this = $(this).html(event.strftime(''
+                    + '<span>%d</span>:'
+                    + '<span>%H</span>:'
+                    + '<span>%M</span>:'
+                    + '<span>%S</span>'));
+            }).on('finish.countdown', function () {
+
+            });
+        })
+    </script>
+    <script>
+        window.onload = function () {
+            initApp();
+        }
+        async function initApp() {
+            MatrixContract = await tronWeb.contract().at(address);// tronWeb.trx.contract(matrixAbi);
+            MatrixInstance = MatrixContract;
+            $('#contractAddress').html("Smart Contract : "+ address);
+            $('#contractAddress').attr("href", "https://tronscan.org/#/contracts/" + address);
+        }
+        async function autoLogin() {
+            var account = tronWeb.defaultAddress.base58;
+            var usr = await MatrixInstance.users(account).call();
+            if (usr.isExist) {
+                alert('Welcome to DivinePower Smart Contract');
+                localStorage.setItem("loginaddress", account);
+                location.href = "dashboard.html";
+            }else{
+                alert("You're not a registered user please register first");
+            }
+        }
+        async function loginwithID(userid) {
+            if (userid.length < 8 && userid.length > 0) {
+                var idToAddress = await MatrixInstance.userList(userid).call();
+                if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
+                    alert('Welcome to DivinePowerAutoPool Smart Contract');
+                    localStorage.setItem("loginaddress", tronWeb.address.fromHex(idToAddress));
+                    location.href = "http://divinepower.netlify.app/dashboard/dashboard.html";
+                } else {
+                    alert("Please enter valid address or id");
+                }
+            }
+            else if (userid.length > 0) {
+                var isExists = await MatrixInstance.userList(userid).call();
+                if (await tronWeb.address.fromHex(isExists) != undefinedAddress) {
+                    alert('Welcome to Divine Power Smart Contract');
+                    localStorage.setItem("loginaddress", await tronWeb.address.fromHex(isExists));
+                    location.href = "http://divinepower.netlify.app/dashboard/dashboard.html";
+                } else {
+                    alert("you're not a registered user, please register");
+                }
+            }
+            else {
+                alert("Please enter valid address or id");
+            }
+        }
+    </script>
+    <!-- END CRYPTO JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!-- END PAGE LEVEL JS-->
+</body>
+
+</html>
+<style>
+    .roadmap .timestamp span {
+        font-weight: 900 !important;
+        font-size: 1rem !important;
+        line-height: 1.5rem;
+    }
+
+    .exchange-listing h2 small {
+        font-size: 65%;
+        color: #7e0cf9;
+        padding: 6px 6px;
+        border-radius: 8px;
+    }
+</style>

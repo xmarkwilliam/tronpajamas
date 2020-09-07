@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-textdirection="ltr">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divine PowerPool</title>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700" rel="stylesheet">
+    <!--Font icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- BEGIN VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+    <!-- END VENDOR CSS-->
+    <!-- END CRYPTO CSS-->
+    <!-- BEGIN Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/template-counter.css">
+    <!-- END Page Level CSS-->
+    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- END Custom CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        .card-title {
+            font-size: 15px;
+            font-family: "roboto", sans-serif;
+            font-weight: 500;
+            color: #212229;
+        }
+
+        .tabs-div .tab-content {
+            background-color: #A34FFE;
+        }
+        /*------ Card -------*/
+        .card {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            min-width: 0;
+            border-radius: 3px;
+            background-color: #fff;
+            word-wrap: break-word;
+            border: 1px solid #e2ebf7 !important;
+            box-shadow: 0 0 3px rgba(31,30,47,.05);
+            margin-bottom: 10px;
+        }
+
+            .card > hr {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .card > .list-group:first-child .list-group-item:first-child {
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+
+            .card > .list-group:last-child .list-group-item:last-child {
+                border-bottom-right-radius: 7px;
+                border-bottom-left-radius: 7px;
+            }
+
+        .card-body {
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            padding: 1.5rem;
+        }
+
+        .text-black {
+            color: black;
+        }
+
+
+        .card-subtitle {
+            margin-top: -0.75rem;
+            margin-bottom: 0;
+        }
+
+        .card-text:last-child {
+            margin-bottom: 0;
+        }
+
+        .card-link:hover {
+            text-decoration: none;
+        }
+
+        .card-link + .card-link {
+            margin-left: 1.5rem;
+        }
+
+        .card-header {
+            padding: 1 rem;
+            margin-bottom: 0;
+            background-color: transparent;
+            border-bottom: 1px solid #eaf0f7;
+        }
+
+            .card-header + .list-group .list-group-item:first-child {
+                border-top: 0;
+            }
+
+        .card-footer {
+            padding: 1.5rem 1.5rem;
+            background-color: rgba(0, 0, 0, 0.03);
+            border-top: 1px solid #eaf0f7;
+        }
+
+            .card-footer:last-child {
+                border-radius: 0 0 calc(3px - 1px) calc(3px - 1px);
+            }
+
+        .card-header-tabs {
+            margin-right: -0.75rem;
+            margin-bottom: -1.5rem;
+            margin-left: -0.75rem;
+            border-bottom: 0;
+        }
+
+        .card-header-pills {
+            margin-right: -0.75rem;
+            margin-left: -0.75rem;
+        }
+
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1.25rem;
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: calc(3px - 1px);
+        }
+
+        .card-img-top {
+            width: 100%;
+            border-top-left-radius: calc(3px - 1px);
+            border-top-right-radius: calc(3px - 1px);
+        }
+
+        .card-img-bottom {
+            width: 100%;
+            border-bottom-right-radius: calc(3px - 1px);
+            border-bottom-left-radius: calc(3px - 1px);
+        }
+
+        .card-deck {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+            .card-deck .card {
+                margin-bottom: 0.75rem;
+            }
+
+        .card-group {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .card-shadow-0 {
+            box-shadow: none !important;
+        }
+
+        .card-group > .card {
+            margin-bottom: 0.75rem;
+        }
+
+        .card-columns .card {
+            margin-bottom: 1.5rem;
+        }
+        /*------ Card -------*/
+
+        .bgcolor-custom {
+            background-color: #4084eb;
+        }
+
+        
+
+        .card-title {
+            font-size: 20px;
+        }
+
+        .card-bgcolor {
+            background-color: #05d4ab !important;
+        }
+
+        .card p {
+            margin-bottom: 0px;
+        }
+        .text-dark {
+            width: 300px;
+            margin: 0 auto;
+        }
+        .head-area .head-content {
+            background:#1c0150 url('assets/img/bg1.png') top right fixed no-repeat;
+            background-size: cover;
+        }
+        .timer {
+            background: #FE4004;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 4vh;
+            font-family: "Bebas Neue";
+            margin: 30px 0;
+            color: #fff;
+        }
+        .launching {
+            color: #fff;
+            font-family: "Bebas Neue";
+            margin: 10px 0 -25px;
+            font-size: 5vh;
+        }
+        svg#loader {
+            background: #032735;
+        }
+        .head-area .head-content {
+        background:#1c0150 url('assets/img/bg1.png') top right fixed no-repeat;
+        background-size: cover;
+    }
+    iframe {
+        width: 640px;
+        height: 360px;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .head-area .head-content {
+    background:#1c0150 url('assets/img/bg1.png') top right fixed no-repeat;
+    background-size: cover;
+    background-position: top right;
+    /**background-color: black;**/
+}
+.btn-gradient-orange {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+    background-image: linear-gradient(40deg, #fd9500 20%, #c37e1c 51%, #fd9500 90%);
+    background-image: linear-gradient(40deg, #fd9500 20%, #c37e1c 51%, #fd9500 90%);
+    background-image: linear-gradient(40deg, #fd9500 20%, #c37e1c 51%, #fd9500 90%);
+    background-image: linear-gradient(40deg, #fd9500 20%, #c37e1c 51%, #fd9500 90%);
+    background-position: left center;
+    -webkit-background-size: 200% auto;
+    background-size: 200% auto;
+    border: 0;
+    color: #FFFFFF;
+}
+.btn-gradient-orange.btn-glow {
+    -webkit-box-shadow: 0 0 12px 0 #FF5F2B;
+    box-shadow: 0 0 12px 0 #FF5F2B;
+    margin: 8px;
+    padding: 10px 25px;
+    font-size: 1.7vh;
+}
+@media (max-width: 575.98px) {
+
+    .head-area .head-content {
+        min-height: 660px;
+    } 
+    .img-fluid, .img-thumbnail {
+        max-width: 80%;
+        height: auto;
+    }
+    .img-fluid, .img-thumbnail {
+        max-width: 80%;
+        height: auto;
+    }
+    .head-area .head-content .container 
+    
+    .timer {
+        background: #FE4004;
+        padding: 0px 20px;
+        border-radius: 10px;
+        font-size: 37px;
+        font-family: "Bebas Neue";
+        margin: 30px 0;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin: 0 auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 30px;
+    }
+    .btn-gradient-orange.btn-glow {
+        -webkit-box-shadow: 0 0 12px 0 #FF5F2B;
+        box-shadow: 0 0 12px 0 #FF5F2B;
+        margin: 8px;
+        padding: 10px 25px;
+        font-size: 1.7vh;
+        width: calc(50% - 30px);
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1460px;
+    }
+}
+
+    </style>
+
+</head>
+<body class=" 1-column   page-animated template-counter" data-menu-open="hover" data-menu="">
+    <!-- Preloader | Comment below code if you don't want preloader-->
+    <div id="loader-wrapper">
+        <svg viewbox=" 0 0 512 512" id="loader">
+            <linearGradient id="loaderLinearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="100%" stop-color="#4707da"></stop>
+            </linearGradient>
+            <g>
+                <circle cx="256" cy="256" r="30" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <circle cx="256" cy="256" r="60" fill="url(#loaderImage)" stroke="none" stroke-width="0" />
+            <!-- Change the preloader logo here -->
+            <defs>
+                <pattern id="loaderImage" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+
+
+                </pattern>
+            </defs>
+        </svg>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!--/ Preloader --><nav class="vertical-social">
+    
+    </nav>
+    <!-- /////////////////////////////////// HEADER /////////////////////////////////////-->
+    <!-- Header Start-->
+    <header class="page-header"></header>
+    <!-- /Header End-->
+    <!-- //////////////////////////////////// CONTAINER ////////////////////////////////////-->
+    <div class="content-wrapper">
+        <div class="content-body">
+            <main>
+                <!-- Header: Counter -->
+                <section class="head-area" id="head-area" data-midnight="white">
+                    <div class="bg-banner"></div>
+                    <div class="head-content container-fluid d-flex align-items-center">
+                        <div class="container">
+                            <div class="banner-wrapper">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4 col-md-4 move-first animated text-center" data-animation="zoomIn" data-animation-delay="2s">
+                                        <img src="dashboard/assets/img/tron3.png" class="crypto-logo-img img-fluid" alt="CICO"><!--rounded mx-auto d-block pulse2-->
+                                        <div class="p-1 text-dark text-center">
+                                             <div class="purchase-token-btn text-center" style="margin-bottom:20px;margin-top:20px;">
+                                                <a href="login.html" class="btn btn-lg btn-gradient-blue btn-round btn-glow">Login</a>
+                                            </div>
+											 <div class="purchase-token-btn text-center" style="margin-bottom:20px;margin-top:20px;">
+                                                <a href="register.html" class="btn btn-lg btn-gradient-blue btn-round btn-glow">Register</a>
+                                            </div>
+                                            <div class="purchase-token-btn text-center" style="margin-bottom:20px;margin-top:20px;">
+                                                <a href="https://t.me/divine" target="_blank" class="btn btn-lg btn-gradient-blue btn-round btn-glow"><i class="fa fa-telegram"></i> &nbsp;  Telegram group</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8 text-center">
+                                        <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p> <p>&nbsp;</p>
+                                          <div class="p-1 text-center">
+                                            <div class='launching'>Business Presentation</div>
+                                          </div>
+                                          <div class="purchase-token-btn text-center" style="margin-bottom:20px;margin-top:20px;">
+                                            <a href="assets/pdf/XOXO-TRON-English.pdf" target="_blank" class="btn btn-lg btn-gradient-orange btn-round btn-glow">
+                                               <img src="assets/img/uk.png"> &nbsp;  English
+                                            </a>  
+                                            <a href="assets/pdf/XOXO-TRON-SPANISH.pdf" target="_blank" class="btn btn-lg btn-gradient-orange btn-round btn-glow">
+                                                <img src="assets/img/spain.png"> &nbsp;  Spanish
+                                            </a>
+                                            <a href="assets/pdf/XOXO-TRON-Chinese.pdf" target="_blank" class="btn btn-lg btn-gradient-orange btn-round btn-glow">
+                                                <img src="assets/img/china.png"> &nbsp;  Chinese
+                                            </a>
+                                            <a href="assets/pdf/XOXO-TRON-Russia.pdf" target="_blank" class="btn btn-lg btn-gradient-orange btn-round btn-glow">
+                                                <img src="assets/img/russia.png"> &nbsp;  Russian
+                                            </a>
+                                            <a href="assets/pdf/XOXOTRON-Indonesia.pdf" target="_blank" class="btn btn-lg btn-gradient-orange btn-round btn-glow">
+                                                <img src="assets/img/indonesia.png"> &nbsp;  Indonesia
+                                            </a>                                                                                            
+                                        </div>
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+           
+
+            </main>
+        </div>
+    </div>
+    <!-- BEGIN VENDOR JS-->
+    <script src="assets/js/vendors.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    
+    <!-- END CRYPTO JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <!-- END PAGE LEVEL JS-->
+</body>
+</html>
