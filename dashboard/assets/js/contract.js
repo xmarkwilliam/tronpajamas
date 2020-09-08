@@ -23,7 +23,7 @@ function copyToClipboard(text) {
 
 function logout() {
     localStorage.removeItem('address');
-    location.href = "https://divinepower.netlify.app/login.html";
+    location.href = "https://tronninja.com/login.html";
 }
 
 function getFormatedDate(unixtimestamp) {
@@ -64,7 +64,7 @@ async function getUsdForTrx(trx) {
                 res(json.trx_rate);
             }
         };
-        var url = "https://divinepower.netlify.app/api/getTrxRate.asp";
+        var url = "https://tronninja.com/api/getTrxRate.asp";
         xhttp3.open("GET", url, true);
         xhttp3.send();
     });

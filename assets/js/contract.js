@@ -64,7 +64,7 @@ async function getUsdForTrx(trx) {
                 res(json.trx_rate);
             }
         };
-        var url = "https://tronmini.netlify.app/getTrxRate.asp";
+        var url = "https://tronninja.com/getTrxRate.asp";
         xhttp3.open("GET", url, true);
         xhttp3.send();
     });
