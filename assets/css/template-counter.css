@@ -3463,7 +3463,7 @@ header .navbar.navbar-shadow {
   background-image :         linear-gradient(90deg, #FF4137, #FDC800);
   -webkit-background-clip : text;
           background-clip : text;
-  text-fill-color : transparent;
+  text-emphasis-color : transparent;
 }
 
 .faq .collapse-icon a[data-toggle='collapse']:after {
@@ -4982,15 +4982,7 @@ p.content-desc {
         text-align: center !important;
     }
 
-    .login100-form 
-    {  
-       /** padding-top: 70px !important;**/
-    }
-    .app-header .header-brand {
-        margin-left: 17px;
-        margin-bottom: 5px;
-    }
-
+    
 
 
 
