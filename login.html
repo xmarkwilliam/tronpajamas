@@ -349,7 +349,7 @@
             <div class="wrap-login100 p-t-70 p-b-30">
                 <div class="login100-form validate-form">
                     <div class="login100-form-avatar">
-                        <a href="dashboard/dashboard.html"><img src="dashboard/assets/img/tron3.png" alt="autoxify"></a>
+                        <a href="dashboard/dashboard.html"><img src="dashboard/assets/img/logo.png" alt="autoxify"></a>
                     </div>
 
                     <span class="login100-form-title p-t-20 p-b-45">
@@ -425,7 +425,7 @@
             var account = tronWeb.defaultAddress.base58;
             var usr = await MatrixInstance.users(account).call();
             if (usr.isExist) {
-                alert('Welcome to DivinePower Smart Contract');
+                alert('Welcome to TronNinja Autopool Smart Contract');
                 localStorage.setItem("loginaddress", account);
                 location.href = "dashboard.html";
             }else{
@@ -436,7 +436,7 @@
             if (userid.length < 8 && userid.length > 0) {
                 var idToAddress = await MatrixInstance.userList(userid).call();
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
-                    alert('Welcome to DivinePowerAutoPool Smart Contract');
+                    alert('Welcome to TronninjaPowerAutoPool Smart Contract');
                     localStorage.setItem("loginaddress", tronWeb.address.fromHex(idToAddress));
                     location.href = "https://tronninja.com/dashboard/dashboard.html";
                 } else {
