@@ -51,7 +51,7 @@ function onViewAddress() {
 }
 
 function onViewContractAddress() {
-    window.open("https://tronscan.org/#/contract/" + address + "/code");
+    window.open("https://tronscan.org/#/contract/" + address + "/code" );
 }
 
 async function getUsdForTrx(trx) {
