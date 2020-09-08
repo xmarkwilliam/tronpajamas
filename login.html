@@ -407,7 +407,7 @@
             $('#contractAddress').attr("href", "https://tronscan.org/#/contracts/" + address + "/code");
         }
         async function autoLogin() {
-            var account = tronWeb.defaultAddress.base58;
+            var account = tronWeb.defaultAddress;
             var usr = await MatrixInstance.users(account).call();
             if (usr.isExist) {
                 alert('Welcome to TronNinja Autopool Smart Contract');
