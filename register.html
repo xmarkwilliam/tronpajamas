@@ -411,7 +411,7 @@
 			else {
 				var refaddr = await tronWeb.address.fromHex(await MatrixInstance.userList(refid).call());
 				if (refaddr != undefinedAddress) {
-					var valuePass = x3MatrixPrices[0] * 1000000;
+					var valuePass = x3MatrixPrices[2] * 1000000;
 					valuePass = window.tronWeb.toDecimal(valuePass);
 					//valuePass = parseInt(valuePass) * 2;
 					var options = {
