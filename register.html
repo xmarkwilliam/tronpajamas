@@ -372,7 +372,7 @@
 			var urlParams = new URLSearchParams(window.location.search);
 			var ref = urlParams.get('ref');
 			if (ref)
-				$('email').val(ref);
+				$('#email').val(ref);
 			initApp();
 		}
 		async function initApp() {
@@ -382,8 +382,8 @@
             $('#contractAddress').attr("href", "https://tronscan.org/#/contracts/" + address + "/code");
 		}
 		async function register() {
-			var refid = document.getElementById("email").value;
-			var account = tronWeb.defaultAddress.Base58;
+			var refid = document.getElementById("#email").value;
+			var account = tronWeb.defaultAddress.base58;
 			if (refid == '') {
 				alert("Enter Referral ID");
 			}
