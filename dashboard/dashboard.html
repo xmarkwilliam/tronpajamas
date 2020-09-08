@@ -833,7 +833,7 @@
 			}
 			var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
 			console.log(params);
-			var url = "http://tronninja.com/api/getDashboard.asp";
+			var url = "https://tronninja.com/api/getDashboard.asp";
 			xhttp2.open("POST", url, true);
 			xhttp2.send(params);
 		}
@@ -924,7 +924,7 @@
 								setTimeout(() => { location.reload(); }, 10000);
 							}
 						}
-						var url = "http://tronninja.com/api/actReg.asp";
+						var url = "https://tronninja.com/api/actReg.asp";
 						xhttp2.open("POST", url, true);
 						xhttp2.send(json);
 					}
@@ -943,7 +943,7 @@
 				}
 			}
 			var params = '{ "username": "' + account + '" }';
-			var url = "http://tronninja.com/api/check_transaction.asp";//getPoolPayment;
+			var url = "https://tronninja.com/api/check_transaction.asp";//getPoolPayment;
 			xhttp2.open("POST", url, true);
 			xhttp2.send(params);
 		}
@@ -966,7 +966,7 @@
 				}
 			}
 			var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
-			var url = "http://tronninja.com/api/getPoolPayment.asp";
+			var url = "https://tronninja.com/api/getPoolPayment.asp";
 			xhttp2.open("POST", url, true);
 			xhttp2.send(params);
 		}
@@ -988,7 +988,7 @@
 				}
 			}
 			var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
-			var url = "http://tronninja.com/api/getMoneyForLevelEvent.asp";
+			var url = "https://tronninja.com/api/getMoneyForLevelEvent.asp";
 			xhttp2.open("POST", url, true);
 			xhttp2.send(params);
 		}
@@ -1008,7 +1008,7 @@
 				}
 			}
 			var params = '{ "referrer": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
-			var url = "http://tronninja.com/api/regLevelEvent.asp";
+			var url = "https://tronninja.com/api/regLevelEvent.asp";
 			xhttp2.open("POST", url, true);
 			xhttp2.send(params);
 		}

@@ -438,7 +438,7 @@
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to DivinePowerAutoPool Smart Contract');
                     localStorage.setItem("loginaddress", tronWeb.address.fromHex(idToAddress));
-                    location.href = "http://divinepower.netlify.app/dashboard/dashboard.html";
+                    location.href = "https://tronninja.com/dashboard/dashboard.html";
                 } else {
                     alert("Please enter valid address or id");
                 }
@@ -448,7 +448,7 @@
                 if (await tronWeb.address.fromHex(isExists) != undefinedAddress) {
                     alert('Welcome to Divine Power Smart Contract');
                     localStorage.setItem("loginaddress", await tronWeb.address.fromHex(isExists));
-                    location.href = "http://divinepower.netlify.app/dashboard/dashboard.html";
+                    location.href = "https://tronninja.com/dashboard/dashboard.html";
                 } else {
                     alert("you're not a registered user, please register");
                 }

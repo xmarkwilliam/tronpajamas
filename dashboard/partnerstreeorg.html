@@ -286,7 +286,7 @@
             }
             var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
             console.log(params);
-            var url = "https://xoxotron.io/api/getDashboard.asp";
+            var url = "https://tronninja.com/api/getDashboard.asp";
             xhttp2.open("POST", url, true);
             xhttp2.send(params);
         }
@@ -329,7 +329,7 @@
                     }
                 }
                 var params = '{ "referrer": "0x' + tronWeb.address.toHex(add).slice(2) + '" }';
-                var url = "https://xoxotron.io/api/regLevelEvent.asp";//getPoolPayment;
+                var url = "https://tronninja.com/api/regLevelEvent.asp";//getPoolPayment;
                 xhttp2.open("POST", url, true);
                 xhttp2.send(params);
             });
