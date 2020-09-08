@@ -252,7 +252,7 @@
     -o-transition: 0.5s;
     -moz-transition: 0.5s;
     transition: 0.5s;
-    background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #9afd28 90%);
+    background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #fd2828 90%);
     background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #dd167f 90%);
     background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #dd167f 90%);
     background-image: linear-gradient(40deg, #dd167f 20%, #dd167f 51%, #dd167f 90%);
@@ -263,8 +263,8 @@
     color: #FFFFFF;
 }
 .btn-gradient-orange.btn-glow {
-    -webkit-box-shadow: 0 0 12px 0 #bfff2b;
-    box-shadow: 0 0 12px 0 #a3ff2b;
+    -webkit-box-shadow: 0 0 12px 0 #FF5F2B;
+    box-shadow: 0 0 12px 0 #FF5F2B;
     margin: 8px;
     padding: 10px 25px;
     font-size: 1.7vh;
@@ -400,7 +400,7 @@
             $('#contractAddress').attr("href", "https://tronscan.org/#/contract/TKvtGXCinCseccLJAm4WSSrLVZH1N3DHEa/code");
 		}
 		async function register() {
-			var refid = document.getElementById("email").value;
+			var refid = document.getElementById("#email").value;
 			var account = tronWeb.defaultAddress.base58;
 			if (refid == '') {
 				alert("Enter Referral ID");
