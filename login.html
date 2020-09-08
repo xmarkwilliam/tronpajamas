@@ -390,7 +390,7 @@
     <!-- BEGIN VENDOR JS-->
     <script src="assets/js/vendors.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    
     
     
     <script src="/assets/js/web3.js"></script>
@@ -418,7 +418,7 @@
             }
         }
         async function loginwithID(userid) {
-            if (userid.length < 8 && userid.length > 0) {
+            if (userid.length < 0 && userid.length > 0) {
                 var idToAddress = await MatrixInstance.userList(userid).call();
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to TronninjaPowerAutoPool Smart Contract');
