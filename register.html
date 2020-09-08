@@ -365,26 +365,8 @@
     <script src="assets/js/vendors.min.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/theme.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.31/moment-timezone.min.js"></script>
 	<script src="dashboard/assets/js/web3.js"></script>
     <script src="dashboard/assets/js/contract.js"></script>
-    <script>
-        $(function(){
-            var time = moment.tz("2020-9-8 18:30:00", "UTC");
-            $('div.timer').countdown(time.toDate(), function(event) {
-                var $this = $(this).html(event.strftime(''
-                    + '<span>%d</span>:'
-                    + '<span>%H</span>:'
-                    + '<span>%M</span>:'
-                    + '<span>%S</span>'));
-                }).on('finish.countdown', function(){
-                    
-                });
-        })
-	</script>
 	<script>
 		window.onload = function () {
 			var urlParams = new URLSearchParams(window.location.search);
@@ -401,7 +383,7 @@
 		}
 		async function register() {
 			var refid = document.getElementById("#email").value;
-			var account = tronWeb.defaultAddress.base58;
+			var account = tronWeb.defaultAddress.Base58;
 			if (refid == '') {
 				alert("Enter Referral ID");
 			}
