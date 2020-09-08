@@ -396,7 +396,7 @@
 		async function initApp() {
 			MatrixContract = await tronWeb.contract().at(address);// tronWeb.trx.contract(matrixAbi);
 			MatrixInstance = MatrixContract;
-			$('#contractAddress').html("Smart Contract : "+ TKvtGXCinCseccLJAm4WSSrLVZH1N3DHEa );
+			$('#contractAddress').html("Smart Contract : "+ address );
             $('#contractAddress').attr("href", "https://tronscan.org/#/contract/TKvtGXCinCseccLJAm4WSSrLVZH1N3DHEa/code");
 		}
 		async function register() {
