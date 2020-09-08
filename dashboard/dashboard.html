@@ -739,7 +739,7 @@
 	<script src="assets/js/chart.js"></script>
 
 	<!-- Custom JS -->
-	<a<script src="assets/js/web3.js.map"></script>
+	<a<script src="assets/js/web3.js"></script>
 	<script src="assets/js/contract.js"></script>
 	<script>
 		var account, loggedId, sponsorAddress;
@@ -757,14 +757,14 @@
 			$('#selfId').html(loggedId);
 			$('#selfAddress').html(account);
 			$('#selfAddress').attr("href", "https://tronscan.org/#/address/" + account);
-			$('#affiliateLink').val("divinepower.netlify.app/register.html?ref=" + loggedId);
+			$('#affiliateLink').val("tronninja.com/register.html?ref=" + loggedId);
 			$('#sponsorId').html(parseInt(userdetails.referrerID));
 			sponsorAddress = await tronWeb.address.fromHex(await MatrixInstance.userList(parseInt(userdetails.referrerID)).call());
 			$('#sponsorAddress').html(sponsorAddress);
 			$('#sponsorAddress').attr("href", "https://tronscan.org/#/address/" + sponsorAddress);
 
 			$('#contractAddress').html(address);
-			$('#contractAddress').attr("href", "https://tronscan.org/#/contract/" + address);
+			$('#contractAddress').attr("href", "https://tronscan.org/#/contract/" + address + "/code");
 
 			var totaluser = await MatrixInstance.currUserID().call();
 			$('#totalUsers').html(parseInt(totaluser));
