@@ -399,7 +399,7 @@
     <script src="dashboard/assets/js/contract.js"></script>
     <script>
         $(function () {
-            var time = moment.tz("2020-08-20 18:30:00", "UTC");
+            var time = moment.tz("2020-08-20 1:40:00", "GMT");
             $('div.timer').countdown(time.toDate(), function (event) {
                 var $this = $(this).html(event.strftime(''
                     + '<span>%d</span>:'
