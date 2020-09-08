@@ -533,17 +533,10 @@
 								</div>
 							</div>
 
-							<div class="card">
-								<div class="card-body">
-									<div class="d-flex justify-content-between mb-3">
-										<div>
-											<span class="d-block">Autopool 9</span>
-										</div>
-										<!-- <div>
-											<span class="text-success">+12.5%</span>
-										</div> -->
-									</div>
-									<h3 class="mb-3">10000 TRX</h3>
+							
+										
+										
+									
 
 								
 								</div>
@@ -1059,11 +1052,6 @@
 			var pool8ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool7userList(pool8activeUserID).call());
 			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap7.html">Autopool 8</a></td><td><h2><a href="#">8000 TRX</a></h2></td><td class="text-center">' + pool8CurrUserID + '</td><td class="text-center">' + pool8activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool8ActiveUser + '" target="_blank">' + pool8ActiveUser + '</a></td></tr>';
 
-
-			var pool9CurrUserID = parseInt(await MatrixInstance.pool8currUserID().call());
-			var pool9activeUserID = parseInt(await MatrixInstance.pool8activeUserID().call());
-			var pool9ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool8userList(pool9activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap8.html">Autopool 9</a></td><td><h2><a href="#">10000 TRX</a></h2></td><td class="text-center">' + pool9CurrUserID + '</td><td class="text-center">' + pool9activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool9ActiveUser + '" target="_blank">' + pool9ActiveUser + '</a></td></tr>';
 
 		}
 	</script>
