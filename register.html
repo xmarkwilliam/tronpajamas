@@ -397,7 +397,7 @@
 			MatrixContract = await tronWeb.contract().at(address);// tronWeb.trx.contract(matrixAbi);
 			MatrixInstance = MatrixContract;
 			$('#contractAddress').html("Smart Contract : "+ address);
-            $('#contractAddress').attr("href", "https://tronscan.org/#/contracts/" + address);
+            $('#contractAddress').attr("href", "https://tronscan.org/#/contracts/" + address + "/code");
 		}
 		async function register() {
 			var refid = document.getElementById("email").value;
