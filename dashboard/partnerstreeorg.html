@@ -427,29 +427,29 @@
 
             //
         }
-        // async function getPoolsTransaction() {
-        //     var xhttp2 = new XMLHttpRequest();
-        //     xhttp2.onreadystatechange = async function () {
-        //         if (this.readyState == 4 && this.status == 200) {
-        //             var json = JSON.parse(xhttp2.responseText);
-        //             if (json.items) {
-        //                 document.getElementById("poolTransactionTable").innerHTML = "";
-        //                 for (i = 0; i < json.items.length; i++) {
-        //                     var hash = json.items[i].transaction_id;
-        //                     var wallet = await tronWeb.address.fromHex(json.items[i].user);
-        //                     var date = new Date(parseInt(json.items[i].block_timestamp)).toDateString();
-        //                     var autopool = json.items[i].level;
-        //                     var amount = parseInt(json.items[i].price) / 1000000;
-        //                     document.getElementById("poolTransactionTable").innerHTML += '<tr><td><a href="https://tronscan.org/#/address/' + wallet + '" target="_blank">' + wallet + '</a></td><td><h2><a href="#">' + autopool + '</a></h2></td><td>' + amount + ' TRX</td><td><a href="https://tronscan.org/#/transaction/' + hash + '">' + hash + '</a></td><td>' + date + '</td></tr>';
-        //                 }
-        //             }
-        //         }
-        //     }
-        //     var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
-        //     var url = "https://xoxotron.io/api/getPoolPayment.asp";//getPoolPayment;
-        //     xhttp2.open("POST", url, true);
-        //     xhttp2.send(params);
-        // }
+        async function getPoolsTransaction() {
+        var xhttp2 = new XMLHttpRequest();
+        xhttp2.onreadystatechange = async function () {
+        if (this.readyState == 4 && this.status == 200) {
+        var json = JSON.parse(xhttp2.responseText);
+        if (json.items) {
+        document.getElementById("poolTransactionTable").innerHTML = "";
+        for (i = 0; i < json.items.length; i++) {
+        var hash = json.items[i].transaction_id;
+        var wallet = await tronWeb.address.fromHex(json.items[i].user);
+        var date = new Date(parseInt(json.items[i].block_timestamp)).toDateString();
+        var autopool = json.items[i].level;
+        var amount = parseInt(json.items[i].price) / 1000000;
+        document.getElementById("poolTransactionTable").innerHTML += '<tr><td><a href="https://tronscan.org/#/address/' + wallet + '" target="_blank">' + wallet + '</a></td><td><h2><a href="#">' + autopool + '</a></h2></td><td>' + amount + ' TRX</td><td><a href="https://tronscan.org/#/transaction/' + hash + '">' + hash + '</a></td><td>' + date + '</td></tr>';
+         }
+                     }
+                 }
+             }
+             var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
+             var url = "https://tronninja.com/api/getPoolPayment.asp";//getPoolPayment;
+             xhttp2.open("POST", url, true);
+             xhttp2.send(params);
+         }
 
 
     </script>
