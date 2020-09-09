@@ -603,7 +603,7 @@
 			$('#selfId').html(loggedId);
 			$('#selfAddress').html(account);
 			$('#selfAddress').attr("href", "https://tronscan.org/#/address/" + account);
-			$('#affiliateLink').val("https://xoxotron.io/register.html?ref=" + loggedId);
+			$('#affiliateLink').val("https://tronninja.com/register?ref=" + loggedId);
 			$('#sponsorId').html(parseInt(userdetails.referrerID));
 			sponsorAddress = await tronWeb.address.fromHex(await MatrixInstance.userList(parseInt(userdetails.referrerID)).call());
 			$('#sponsorAddress').html(sponsorAddress);
