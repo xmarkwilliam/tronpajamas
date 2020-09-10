@@ -330,7 +330,7 @@
 <div 
 class="container-login100-form-btn" onclick="users()"><button>Userlist</button>
 <input type="text" id="users"
-<div class="container-login100-form-btn p-t-10">
+class="container-login100-form-btn p-t-10">
     <button class="login100-form-btn" onClick="users()">
         users
     </button>
@@ -380,13 +380,14 @@ class="container-login100-form-btn" onclick="users()"><button>Userlist</button>
 			var urlParams = new URLSearchParams(window.location.search);
 			var ref = urlParams.get('ref');
 			if (ref)
-				$('email').val(ref);
+				$('#email').val(ref);
 			initApp();
 		}
         async function users(params) {
             MatrixContract = await tronWeb.contract().at(address);
             MatrixInstance = MatrixContract;
             var userdetails = await MatrixInstance.users(account).call();
+            
             console.log(users)
         }
 		async function initApp() {
@@ -396,7 +397,7 @@ class="container-login100-form-btn" onclick="users()"><button>Userlist</button>
             $('#contractAddress').attr("href", "https://tronscan.org/#/contracts/" + address + "/code");
 		}
 		async function register() {
-			var refid = document.getElementById("email").value;
+			var refid = document.getElementById("#email").value;
 			var account = tronWeb.defaultAddress.base58;
 			if (refid == '') {
 				alert("Enter Referral ID");
