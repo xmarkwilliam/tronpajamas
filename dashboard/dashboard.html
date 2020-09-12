@@ -10,8 +10,30 @@
 	<meta name="author" content="Dreamguys - Bootstrap Admin Template">
 	<meta name="robots" content="noindex, nofollow">
 	<title>Dashboard</title>
+<!-- custom test start-->
+/>
+<link
+rel="stylesheet"
+type="text/css"
+href="assets/css/main.css"
+/>
+<link
+rel="stylesheet"
+type="text/css"
+href="assets/css/custom.css"
+/>
+<link
+rel="stylesheet"
+type="text/css"
+href="assets/css/animate.min.css"
+/>
+<link
+rel="stylesheet"
+type="text/css"
+href="assets/css/util.css"
+    />
 
-
+<!-- custom test end -->
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
@@ -47,6 +69,7 @@
 				</a>
 			</div>
 			<!-- /Logo -->
+			
 
 
 			<!-- Mobile Menu -->
@@ -92,6 +115,7 @@
 				<!-- Page Header -->
 
 				<!-- /Page Header -->
+				<!-- /log in start -->
 					<div class="wrap-input100 validate-input m-b-10 row mr-2 ml-2">
 						<!-- <button class="btn btn-primary mb-2 bg-danger col-lg-12" type="button" id="pool1btn"
 										onclick="buyNewLevel('1')">Buy</button> -->
@@ -102,8 +126,48 @@
 						</button>
 					</div>
 			
-			
+					<div class="wrap-input100 validate-input m-b-10" data-validate="Username is required">
+						<input class="input100" type="text" name="username" id="email"
+							placeholder="Enter your Tron address">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user"></i>
+						</span>
+					</div>
+					<div class="container-login100-form-btn p-t-10">
+						<button class="login100-form-btn" onclick="loginwithID($('#email').val())">
+							Login
+						</button>
+					</div>
+					<!-- /log in end -->
+					<!-- /register start -->
 
+					<span class="login100-form-title p-t-20"> &nbsp; </span>
+
+            <div
+              class="wrap-input100 validate-input m-b-10"
+              data-validate="Username is required"
+            >
+              <input
+                class="input100"
+                type="text"
+                id="#email"
+                name="username"
+                placeholder="Enter your sponsor ID"
+              />
+              <span class="focus-input100"></span>
+              <span class="symbol-input100">
+                <i class="fa fa-user"></i>
+              </span>
+            </div>
+
+            <div class="container-login100-form-btn p-t-10">
+              <button class="login100-form-btn" onclick="register()">
+                Submit
+              </button>
+            </div>
+
+			<!-- /register end -->
 				<div class="row">
 					<div class="col-md-12 col-lg-6 col-xl-4 d-flex">
 						<div class="card flex-fill">
@@ -587,8 +651,131 @@
 	<!-- Custom JS -->
 	<script src="assets/js/web3.js"></script>
 	<script src="assets/js/contract.js"></script>
-	<script src="assets/js/TronWeb.js"></script>
+	
 	<script>
+//end
+window.onload = function () {
+            initApp();
+        }
+        async function initApp() {
+            MatrixContract = await tronWeb.contract().at(address);// tronWeb.trx.contract(matrixAbi);
+            MatrixInstance = MatrixContract;
+            $('#contractAddress').html("Smart Contract : " + address);
+            $('#contractAddress').attr("href", "https://tronscan.org/#/contracts/" + address + "/code");
+        }
+        async function autoLogin() {
+            var account = tronWeb.defaultaddress;
+            var usr = await MatrixInstance.users(account).call();
+            if (usr.isExist) {
+                alert('Welcome to TronNinja Autopool Smart Contract');
+                localStorage.setItem("loginaddress", account);
+                location.href = "https://tronninja.com/dashboard.html";
+            }else{
+                alert("You're not a registered user please register first");
+            }
+        }
+        async function loginwithID(userid) {
+            if (userid.length < 0 && userid.length > 0) {
+                var idToAddress = await MatrixInstance.userList(userid).call();
+                if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
+                    alert('Welcome to TronninjaPowerAutoPool Smart Contract');
+                    localStorage.setItem("loginaddress", tronWeb.address.fromHex(idToAddress));
+                    location.href = "https://tronninja.com/dashboard.html";
+                } else {
+                    alert("Please enter valid address or id");
+                }
+            }
+            else if (userid.length > 0) {
+                var isExists = await MatrixInstance.userList(userid).call();
+                if (await tronWeb.address.fromHex(isExists) != undefinedAddress) {
+                    alert('Welcome to Tron Ninja Smart Contract');
+                    localStorage.setItem("loginaddress", await tronWeb.address.fromHex(isExists));
+                    location.href = "https://tronninja.com/dashboard.html";
+                } else {
+                    alert("you're not a registered user, please register");
+                }
+            }
+            else {
+                alert("Please enter valid address or id");
+            }
+        }
+
+// end login
+//start register
+
+window.onload = function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var ref = urlParams.get("ref");
+        if (ref) $("#email").val(ref);
+        initApp();
+      };
+      async function users(params) {
+        MatrixContract = await tronWeb.contract().at(address);
+        MatrixInstance = MatrixContract;
+        var userdetails = await MatrixInstance.users(account).call();
+
+        console.log(users);
+      }
+      async function initApp() {
+        MatrixContract = await tronWeb.contract().at(address); // tronWeb.trx.contract(matrixAbi);
+        MatrixInstance = MatrixContract;
+        $("#contractAddress").html("Smart Contract : " + address);
+        $("#contractAddress").attr(
+          "href",
+          "https://tronscan.org/#/contracts/" + address + "/code"
+        );
+      }
+      async function register() {
+        var refid = document.getElementById("#email").value;
+        var account = tronWeb.defaultAddress.base58;
+        if (refid == "") {
+          alert("Enter Referral ID");
+        } else if (isNaN(refid)) {
+          alert("Enter Referral ID as numeric value");
+        } else {
+          var refaddr = await tronWeb.address.fromHex(
+            await MatrixInstance.userList(refid).call()
+          );
+          if (refaddr != undefinedAddress) {
+            var valuePass = x3MatrixPrices[2] * 1000000;
+            valuePass = window.tronWeb.toDecimal(valuePass);
+            //valuePass = parseInt(valuePass) * 2;
+            var options = {
+              shouldPollResponse: false,
+              feeLimit: 15000000,
+              callValue: valuePass,
+              from: account,
+            };
+            var result = await MatrixInstance.regUser(refid).send(options);
+            console.log(result);
+            if (result) {
+              var json =
+                '{ "username":"' +
+                account +
+                '", "transactionid":"' +
+                result +
+                '","sponsorid":"' +
+                refaddr +
+                '" }';
+              var xhttp2 = new XMLHttpRequest();
+              xhttp2.onreadystatechange = async function () {
+                if (this.readyState == 4 && this.status == 200) {
+                  console.log("success" + xhttp2.responseText);
+                  localStorage.setItem("loginaddress", account);
+                  location.href =
+                    "https/tronninja.com/dashboard.html";
+                }
+              };
+            } else {
+              alert("Transaction cancelled or Error accured");
+            }
+          } else {
+            alert("Please enter valid sponsor id");
+          }
+        }
+	  }
+	  //end register
+
 
 		var account, loggedId, sponsorAddress;
 		window.onload = function () {

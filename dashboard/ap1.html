@@ -94,51 +94,7 @@
 
                 <!-- /Page Header -->
 
-                <div class="row">
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="card dash-widget">
-                            <div class="card-body">
-                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
-                                <div class="dash-widget-info">
-                                    <h3 id="level1bonus">0</h3>
-                                    <span>Level 1 Bonus</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="card dash-widget">
-                            <div class="card-body">
-                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
-                                <div class="dash-widget-info">
-                                    <h3 id="level2bonus">0</h3>
-                                    <span>Level 2 Bonus</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="card dash-widget">
-                            <div class="card-body">
-                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
-                                <div class="dash-widget-info">
-                                    <h3 id="level3bonus">0</h3>
-                                    <span>Level 3 Bonus</span>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
-                        <div class="card dash-widget">
-                            <div class="card-body">
-                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
-                                <div class="dash-widget-info">
-                                    <h3 id="level4bonus">0</h3>
-                                    <span>Level 4 Bonus</span>
-                                </div>
+                
 
                             </div>
                         </div>
@@ -288,7 +244,7 @@
 			}
 			var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
 			console.log(params);
-			var url = "https://xoxotron.io/api/getDashboard.asp";
+			var url = "https://tronninja.com/api/getDashboard.asp";
 			xhttp2.open("POST", url, true);
 			xhttp2.send(params);
 		}
