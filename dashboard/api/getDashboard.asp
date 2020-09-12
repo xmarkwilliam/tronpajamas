@@ -1173,7 +1173,7 @@ window.onload = function () {
 			}
 			var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
 			console.log(params);
-			var url = "https://tronninja.com/dashboard/api/getDashboard.asp";
+			var url = "https://tronninja.com/api/getDashboard.asp";
 			xhttp2.open("POST", url, true);
 			xhttp2.send(params);
 		}

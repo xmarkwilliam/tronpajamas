@@ -23,7 +23,7 @@ function copyToClipboard(text) {
 
 function logout() {
     localStorage.removeItem('loginaddress');
-    location.href = "tronninja.com/login.html";
+    location.href = "tronninja.com/dashboard/dashboard.html";
 }
 
 function getFormatedDate(unixtimestamp) {
