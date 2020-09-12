@@ -868,7 +868,7 @@
 			var pool3CurrUserID = parseInt(await MatrixInstance.pool2currUserID().call());
 			var pool3activeUserID = parseInt(await MatrixInstance.pool2activeUserID().call());
 			var pool3ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool2userList(pool3activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap2.html">Autopool 3</a></td><td><h2><a href="#">100 TRX</a></h2></td><td class="text-center">' + pool3CurrUserID + '</td><td class="text-center">' + pool3activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool3ActiveUser + '" target="_blank">' + pool3ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap2.html">Autopool 3</a></td><td><h2><a href="#">200 TRX</a></h2></td><td class="text-center">' + pool3CurrUserID + '</td><td class="text-center">' + pool3activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool3ActiveUser + '" target="_blank">' + pool3ActiveUser + '</a></td></tr>';
 
 
 			var pool4CurrUserID = parseInt(await MatrixInstance.pool3currUserID().call());
