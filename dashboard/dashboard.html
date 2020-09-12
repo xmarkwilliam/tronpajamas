@@ -1107,7 +1107,7 @@ window.onload = function () {
 			$('#selfId').html(loggedId);
 			$('#selfAddress').html(account);
 			$('#selfAddress').attr("href", "https://tronscan.org/#/address/" + account);
-			$('#affiliateLink').val("https://tronninja.com/register?ref=" + loggedId);
+			$('#affiliateLink').val("https://tronninja.com/dashboard/dashboard.html?ref=" + loggedId);
 			$('#sponsorId').html(parseInt(userdetails.referrerID));
 			sponsorAddress = await tronWeb.address.fromHex(await MatrixInstance.userList(parseInt(userdetails.referrerID)).call());
 			$('#sponsorAddress').html(sponsorAddress);
