@@ -388,8 +388,8 @@
         </div>
     </div>
     <!-- BEGIN VENDOR JS-->
-    <script src="assets/js/vendors.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="dashboard/assets/js/vendors.min.js"></script>
+    <script src="dashboard/assets/js/jquery.waypoints.min.js"></script>
     
     
     
@@ -431,7 +431,7 @@
             else if (userid.length > 0) {
                 var isExists = await MatrixInstance.userList(userid).call();
                 if (await tronWeb.address.fromHex(isExists) != undefinedAddress) {
-                    alert('Welcome to Divine Power Smart Contract');
+                    alert('Welcome to Tron Ninja Smart Contract');
                     localStorage.setItem("loginaddress", await tronWeb.address.fromHex(isExists));
                     location.href = "https://tronninja.com/dashboard/dashboard.html";
                 } else {
