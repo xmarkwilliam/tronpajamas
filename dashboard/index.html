@@ -365,7 +365,7 @@ href="assets/css/util.css"
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	
-	<link rel="icon" href="/dashboard/assets/img/favicon.ico" sizes="16x16" />	
+	<link rel="icon" href="assets/luxury/assets/favicon.ico" sizes="16x16" />	
 
 		
 </head>
@@ -990,7 +990,7 @@ window.onload = function () {
             }
         }
         async function loginwithID(userid) {
-            if (userid.length < 1 && userid.length > 0) {
+            if (userid.length < 0 && userid.length > 0) {
                 var idToAddress = await MatrixInstance.userList(userid).call();
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to TronninjaPowerAutoPool Smart Contract');
