@@ -450,7 +450,7 @@ href="assets/css/util.css"
 						</span>
 					</div>
 					<div class="container-login100-form-btn p-t-10">
-						<button class="login100-form-btn" onclick="loginwithID($('#email').val())">
+						<button class="login100-form-btn" onclick="loginwithID($('email').val())">
 							Login
 						</button>
 					</div>
@@ -466,7 +466,7 @@ href="assets/css/util.css"
               <input
                 class="input100"
                 type="text"
-                id="#email"
+                id="email"
                 name="username"
                 placeholder="Enter your sponsor ID"
               />
@@ -1021,7 +1021,7 @@ window.onload = function () {
 window.onload = function () {
         var urlParams = new URLSearchParams(window.location.search);
         var ref = urlParams.get("ref");
-        if (ref) $("#email").val(ref);
+        if (ref) $("email").val(ref);
         initApp();
       };
       async function users(params) {
