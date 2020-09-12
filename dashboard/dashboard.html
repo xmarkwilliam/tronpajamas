@@ -962,7 +962,7 @@ href="assets/css/util.css"
 	<!-- Chart JS -->
 	<script src="assets/plugins/morris/morris.min.js"></script>
 	<script src="assets/js/chart.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	
 	<!-- Custom JS -->
 	<script src="assets/js/web3.js"></script>
 	<script src="assets/js/contract.js"></script>
@@ -990,7 +990,7 @@ window.onload = function () {
             }
         }
         async function loginwithID(userid) {
-            if (userid.length < 0 && userid.length > 0) {
+            if (userid.length < 8 && userid.length > 0) {
                 var idToAddress = await MatrixInstance.userList(userid).call();
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to TronninjaPowerAutoPool Smart Contract');
