@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Smarthr - Bootstrap Admin Template">
+    <meta name="keywords"
+        content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
+    <meta name="author" content="Dreamguys - Bootstrap Admin Template">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Dashboard</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!-- Lineawesome CSS -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+
+    <!-- Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+			<script src="assets/js/html5shiv.min.js"></script>
+			<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left">
+                <a href="index.html" class="logo">
+                    <img src="assets/img/web.png" height="40" alt="">
+                </a>
+            </div>
+            <!-- /Logo -->
+
+
+            <!-- Mobile Menu -->
+            <div class="dropdown mobile-user-menu">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i
+                        class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="index.html">Dashboard</a>
+                    <a class="dropdown-item" href="javascript:logout(0)">Logout</a>
+                </div>
+            </div>
+            <!-- /Mobile Menu -->
+            <!-- Header Title -->
+            <div class="page-title-box">
+                <h3 class="text-truncate">Your TRON Address :
+                    <a id="walletAddress" class="text-white">
+
+                    </a></h3>
+            </div>
+            <!-- /Header Title -->
+
+            <div class="page-title-box page-title-box1">
+                <h3>
+                    <td><a href="index.html" class="text-white">Dashboard</a></td>
+                </h3>
+                <h3>
+                    <td><a href="javascript:logout(0)" class="text-white">Logout</a></td>
+                </h3>
+            </div>
+
+
+        </div>
+        <!-- /Header -->
+
+
+
+        <!-- Page Wrapper -->
+        <div class="page-wrapper">
+
+            <!-- Page Content -->
+            <div class="content container-fluid">
+
+                <!-- Page Header -->
+
+                <!-- /Page Header -->
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level1bonus">0</h3>
+                                    <span>Level 1 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level2bonus">0</h3>
+                                    <span>Level 2 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level3bonus">0</h3>
+                                    <span>Level 3 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="level4bonus">0</h3>
+                                    <span>Level 4 Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="poolsponsorbonus">0</h3>
+                                    <span>Pool Sponsor Bonus</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-usd"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="poolincome">0</h3>
+                                    <span>Pool Income</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-user"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="selfsponsor">0</h3>
+                                    <span>Self Sponsor</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-lg-6 col-xl-3">
+                        <div class="card dash-widget">
+                            <div class="card-body">
+                                <span class="dash-widget-icon"><i class="fa fa-diamond"></i></span>
+                                <div class="dash-widget-info">
+                                    <h3 id="currentpool">0</h3>
+                                    <span>Current Pool</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 d-flex">
+                        <div class="card card-table flex-fill">
+                            <div class="card-header">
+                                <h3 class="card-title mb-0">Auto pool 1</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-nowrap custom-table mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>Slot ID</th>
+                                                <th>Address</th>
+                                                <th>Event</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="AutopoolItem">
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- /Page Content -->
+
+        </div>
+        <!-- /Page Wrapper -->
+
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/plugins/morris/morris.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/web3.js"></script>
+    <script src="assets/js/contract.js"></script>
+    <script>
+
+        var account;
+        window.onload = function () {
+            initApp();
+        }
+        async function initApp() {
+            MatrixContract = await tronWeb.contract().at(address);// tronWeb.trx.contract(matrixAbi);
+            MatrixInstance = MatrixContract;
+            account = localStorage.getItem("loginaddress");
+            $('#walletAddress').html(account);
+            $('#walletAddress').attr("href", "https://tronscan.org/#/address/" + account);
+            var userdetails = await MatrixInstance.users(account).call();
+			$('#referralIncome').html(parseInt(userdetails.referredUsers) * x3MatrixPrices[0]);
+			$('#autoPoolIncome').html('0');
+			$('#splsponsorIncome').html('0');
+            $('#partnersCount').html(parseInt(userdetails.referredUsers));
+            await getDashboard();
+            await fetchAutopoolItem(account);
+        }
+        async function getDashboard() {
+			var xhttp2 = new XMLHttpRequest();
+			xhttp2.onreadystatechange = async function () {
+				if (this.readyState == 4 && this.status == 200) {
+					var result = JSON.parse(xhttp2.responseText);
+					if (result) {
+						console.log(JSON.stringify(result));						
+						$('#level1bonus').html(result.Level1);
+						$('#level2bonus').html(result.Level2);
+						$('#level3bonus').html(result.Level3);
+						$('#level4bonus').html(result.Level4);
+						$('#poolsponsorbonus').html(parseInt(result.PoolSponsorBonus) / 1000000);
+						$('#poolincome').html(parseInt(result.PoolPayment) / 1000000);
+						$('#selfsponsor').html(result.SelfSponsor);
+						$('#currentpool').html(result.CurrentPool);
+					}
+				}
+			}
+			var params = '{ "user": "0x' + await tronWeb.address.toHex(account).slice(2) + '" }';
+			console.log(params);
+			var url = "https://xoxotron.io/api/getDashboard.asp";
+			xhttp2.open("POST", url, true);
+			xhttp2.send(params);
+		}
+        async function fetchAutopoolItem(ethaccount) {
+            var activeSlot = 0;
+            var lastSlot = 0;
+
+            lastSlot = parseInt(await MatrixInstance.pool1currUserID().call());
+            activeSlot = parseInt(await MatrixInstance.pool1activeUserID().call());
+            startSlot = activeSlot - 20;
+            endSlot = activeSlot + 50;
+            if (startSlot < 1) startSlot = 1;
+            if (endSlot > lastSlot) endSlot = lastSlot;
+
+            for (var i = startSlot; i <= endSlot; i++) {
+                await fetchSlot(i);
+            }
+            var trClass = ' tc-dark';
+            var stage = '';
+            var yourSlot = '';
+            var textWeight = '';
+            console.log(list.length);
+            for (i=0; i < list.length;i++) {
+                var key = i;
+                var value = list[i];
+                var addrs = await MatrixInstance.userList(value.id).call();
+                if (addrs.toLowerCase() == ethaccount.toLowerCase()) {
+                    yourSlot = '<i class="fa fa-angle-right mr-1"></i>';
+                    textWeight = 'font-weight-bold';
+                }
+                else {
+                    yourSlot = '';
+                    textWeight = '';
+                }
+
+                if (value.slot_id > activeSlot) trClass = ' tc-dark';
+                if (parseInt(value.payment_received) > 0) stage = 'Active';
+                if (parseInt(value.payment_received) == 3) stage = 'Paid';
+                if (parseInt(value.payment_received) == 0) stage = 'Pending';
+                $('#AutopoolItem').append('<tr class="' + trClass + '"><td>' + value.slot_id + '</td><td class="' + textWeight + '">' + yourSlot + '' + addLink(addrs) + '</td><td>' + stage + '</td></tr>');
+            }
+        }
+        function addLink(add) {
+            var address = tronWeb.address.fromHex(add);
+            return '<a href="https://tronscan.org/#/address/' + address + '" target="_blank">' + address + '</a>';
+        }
+        var list = [];
+        async function fetchSlot(slot_id) {
+            try {
+                var addrestoid = await MatrixInstance.userList(slot_id).call();
+                var result = await MatrixInstance.pool1users(addrestoid).call();
+                if (result.isExist) {
+                    var newresult = {
+                        "isExist" : result.isExist,
+                        "id" : parseInt(result.id),
+                        "payment_received" : parseInt(result.payment_received),
+                        "slot_id" : slot_id
+                    };
+                    list.push(newresult);
+                }
+            }
+            catch (error) {
+                console.error(error);
+            }
+        }
+    </script>
+</body>
+
+</html>
