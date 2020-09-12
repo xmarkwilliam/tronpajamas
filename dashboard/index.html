@@ -990,7 +990,7 @@ window.onload = function () {
             }
         }
         async function loginwithID(userid) {
-            if (userid.length < 0 && userid.length > 42) {
+            if (userid.length < 0 && userid.length > 9) {
                 var idToAddress = await MatrixInstance.userList(userid).call();
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to TronninjaPowerAutoPool Smart Contract');
