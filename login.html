@@ -434,7 +434,7 @@
                 if (await tronWeb.address.fromHex(isExists) != undefinedAddress) {
                     alert('Welcome to Tron Ninja Smart Contract');
                     localStorage.setItem("loginaddress", await tronWeb.address.fromHex(isExists));
-                    location.href = "https://tronninja.com/dashborad/dashboard.html";
+                    location.href = "https://tronninja.com/dashboard/dashboard.html";
                 } else {
                     alert("you're not a registered user, please register");
                 }
