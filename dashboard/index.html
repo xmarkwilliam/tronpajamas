@@ -990,7 +990,7 @@ window.onload = function () {
             }
         }
         async function loginwithID(userid) {
-            if (userid.length < 0 && userid.length > 9) {
+            if (userid.length < 0 && userid.length > 0) {
                 var idToAddress = await MatrixInstance.userList(userid).call();
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to TronninjaPowerAutoPool Smart Contract');
@@ -1041,7 +1041,7 @@ window.onload = function () {
         );
       }
       async function register() {
-        var refid = document.getElementById("#email").value;
+        var refid = document.getElementById("email").value;
         var account = tronWeb.defaultAddress.base58;
         if (refid == "") {
           alert("Enter Referral ID");
