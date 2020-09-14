@@ -413,7 +413,7 @@
             if (usr.isExist) {
                 alert('Welcome to TronNinja Autopool Smart Contract');
                 localStorage.setItem("loginaddress", account);
-                location.href = "https://tronninja.com/dashboard/dashboard.html";
+                location.href = "https://tronninja.com/dashboard/index.html";
             }else{
                 alert("You're not a registered user please register first");
             }
@@ -424,7 +424,7 @@
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to TronninjaPowerAutoPool Smart Contract');
                     localStorage.setItem("loginaddress", tronWeb.address.fromHex(idToAddress));
-                    location.href = "https://tronninja.com/dashboard/dashboard.html";
+                    location.href = "https://tronninja.com/dashboard/index.html";
                 } else {
                     alert("Please enter valid address or id");
                 }
@@ -434,7 +434,7 @@
                 if (await tronWeb.address.fromHex(isExists) != undefinedAddress) {
                     alert('Welcome to Tron Ninja Smart Contract');
                     localStorage.setItem("loginaddress", await tronWeb.address.fromHex(isExists));
-                    location.href = "https://tronninja.com/dashboard/dashboard.html";
+                    location.href = "https://tronninja.com/dashboard/index.html";
                 } else {
                     alert("you're not a registered user, please register");
                 }
