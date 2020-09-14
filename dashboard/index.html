@@ -985,8 +985,8 @@ window.onload = function () {
                 alert("You're not a registered user please register first");
             }
         }
-        async function loginwithID(userID) {
-            if (userID.length < 0 && userID.length > 9) {
+        async function loginwithID(userID) 
+           
                 var idToAddress = await MatrixInstance.userList(userID).call();
                 if (idToAddress && tronWeb.address.fromHex(idToAddress) != undefinedAddress) {
                     alert('Welcome to TronninjaPowerAutoPool Smart Contract');
@@ -995,21 +995,9 @@ window.onload = function () {
                 } else {
                     alert("Please enter valid address or id");
                 }
-            }
-            else if (userID.length > 0) {
-                var isExists = await MatrixInstance.userList(userID).call();
-                if (await tronWeb.address.fromHex(isExists) != undefinedAddress) {
-                    alert('Welcome to Tron Ninja Smart Contract');
-                    localStorage.setItem("loginaddress", await tronWeb.address.fromHex(isExists));
-                    location.href = "https://tronninja.com/dashboard/index.html";
-                } else {
-                    alert("you're not a registered user, please register");
-                }
-            }
-            else {
-                alert("Please enter valid address or id");
-            }
-        }
+            
+     
+        
 
 // end login
 //start register
