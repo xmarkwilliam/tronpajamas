@@ -342,11 +342,7 @@ rel="stylesheet"
 type="text/css"
 href="assets/css/animate.min.css"
 />
-<link
-rel="stylesheet"
-type="text/css"
-href="assets/css/util.css"
-    />
+
 
 <!-- custom test end -->
 	<!-- Bootstrap CSS -->
@@ -408,7 +404,7 @@ href="assets/css/util.css"
 
 			<div class="page-title-box page-title-box1">
 				<h3>
-					<td><a href="/dashboard/dashboard.html" class="text-white">Dashboard</a></td>
+					<td><a href="/dashboard/index.html" class="text-white">Dashboard</a></td>
 				</h3>
 				<h3>
 					<td><a href="javascript:logout(0)" class="text-white">Logout</a></td>
@@ -441,16 +437,16 @@ href="assets/css/util.css"
 						</button>
 					</div>
 			
-					<div class="wrap-input100 validate-input m-b-10" data-validate="Username is required">
-						<input class="input100" type="text" name="username" id="email"
-							placeholder="Enter your Tron address">
+					<div class="wrap-input100 validate-input m-b-10" data-validate="username is required">
+						<input class="input100" type="text" name="username" id="#email"
+							placeholder="Enter your ID">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-user"></i>
 						</span>
 					</div>
 					<div class="container-login100-form-btn p-t-10">
-						<button class="login100-form-btn" onclick="loginwithID($('email').val())">
+						<button class="login100-form-btn" onclick="loginwithID($('#email').val())">
 							Login
 						</button>
 					</div>
@@ -1358,55 +1354,55 @@ window.onload = function () {
 			var pool1CurrUserID = parseInt(await MatrixInstance.currUserID().call());
 			//var pool1activeUserID = parseInt(await MatrixInstance.activeUserID().call());
 			//var pool1ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.userList(pool1activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a>Autopool 1</a></td><td><h2><a href="#">100 TRX</a></h2></td><td class="text-center">' + pool1CurrUserID + '</td><td class="text-center"></td><td class="text-center">NA</td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a>Registeration 1</a></td><td><h2><a href="#">100 TRX</a></h2></td><td class="text-center">' + pool1CurrUserID + '</td><td class="text-center"></td><td class="text-center">NA</td></tr>';
 
 
 			var pool2CurrUserID = parseInt(await MatrixInstance.pool1currUserID().call());
 			var pool2activeUserID = parseInt(await MatrixInstance.pool1activeUserID().call());
 			var pool2ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool1userList(pool2activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap1.html">Autopool 2</a></td><td><h2><a href="#">100 TRX</a></h2></td><td class="text-center">' + pool2CurrUserID + '</td><td class="text-center">' + pool2activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool2ActiveUser + '" target="_blank">' + pool2ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap1.html">Autopool 1</a></td><td><h2><a href="#">100 TRX</a></h2></td><td class="text-center">' + pool2CurrUserID + '</td><td class="text-center">' + pool2activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool2ActiveUser + '" target="_blank">' + pool2ActiveUser + '</a></td></tr>';
 
 
 			var pool3CurrUserID = parseInt(await MatrixInstance.pool2currUserID().call());
 			var pool3activeUserID = parseInt(await MatrixInstance.pool2activeUserID().call());
 			var pool3ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool2userList(pool3activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap2.html">Autopool 3</a></td><td><h2><a href="#">200 TRX</a></h2></td><td class="text-center">' + pool3CurrUserID + '</td><td class="text-center">' + pool3activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool3ActiveUser + '" target="_blank">' + pool3ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap2.html">Autopool 2</a></td><td><h2><a href="#">200 TRX</a></h2></td><td class="text-center">' + pool3CurrUserID + '</td><td class="text-center">' + pool3activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool3ActiveUser + '" target="_blank">' + pool3ActiveUser + '</a></td></tr>';
 
 
 			var pool4CurrUserID = parseInt(await MatrixInstance.pool3currUserID().call());
 			var pool4activeUserID = parseInt(await MatrixInstance.pool3activeUserID().call());
 			var pool4ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool3userList(pool4activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap3.html">Autopool 4</a></td><td><h2><a href="#">400 TRX</a></h2></td><td class="text-center">' + pool4CurrUserID + '</td><td class="text-center">' + pool4activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool4ActiveUser + '" target="_blank">' + pool4ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap3.html">Autopool 3</a></td><td><h2><a href="#">400 TRX</a></h2></td><td class="text-center">' + pool4CurrUserID + '</td><td class="text-center">' + pool4activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool4ActiveUser + '" target="_blank">' + pool4ActiveUser + '</a></td></tr>';
 
 
 			var pool5CurrUserID = parseInt(await MatrixInstance.pool4currUserID().call());
 			var pool5activeUserID = parseInt(await MatrixInstance.pool4activeUserID().call());
 			var pool5ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool4userList(pool5activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap4.html">Autopool 5</a></td><td><h2><a href="#">800 TRX</a></h2></td><td class="text-center">' + pool5CurrUserID + '</td><td class="text-center">' + pool5activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool5ActiveUser + '" target="_blank">' + pool5ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap4.html">Autopool 4</a></td><td><h2><a href="#">800 TRX</a></h2></td><td class="text-center">' + pool5CurrUserID + '</td><td class="text-center">' + pool5activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool5ActiveUser + '" target="_blank">' + pool5ActiveUser + '</a></td></tr>';
 
 
 			var pool6CurrUserID = parseInt(await MatrixInstance.pool5currUserID().call());
 			var pool6activeUserID = parseInt(await MatrixInstance.pool5activeUserID().call());
 			var pool6ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool5userList(pool6activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap5.html">Autopool 6</a></td><td><h2><a href="#">1500 TRX</a></h2></td><td class="text-center">' + pool6CurrUserID + '</td><td class="text-center">' + pool6activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool6ActiveUser + '" target="_blank">' + pool6ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap5.html">Autopool 5</a></td><td><h2><a href="#">1500 TRX</a></h2></td><td class="text-center">' + pool6CurrUserID + '</td><td class="text-center">' + pool6activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool6ActiveUser + '" target="_blank">' + pool6ActiveUser + '</a></td></tr>';
 
 
 			var pool7CurrUserID = parseInt(await MatrixInstance.pool6currUserID().call());
 			var pool7activeUserID = parseInt(await MatrixInstance.pool6activeUserID().call());
 			var pool7ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool6userList(pool7activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap6.html">Autopool 7</a></td><td><h2><a href="#">3000 TRX</a></h2></td><td class="text-center">' + pool7CurrUserID + '</td><td class="text-center">' + pool7activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool7ActiveUser + '" target="_blank">' + pool7ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap6.html">Autopool 6</a></td><td><h2><a href="#">3000 TRX</a></h2></td><td class="text-center">' + pool7CurrUserID + '</td><td class="text-center">' + pool7activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool7ActiveUser + '" target="_blank">' + pool7ActiveUser + '</a></td></tr>';
 
 
 			var pool8CurrUserID = parseInt(await MatrixInstance.pool7currUserID().call());
 			var pool8activeUserID = parseInt(await MatrixInstance.pool7activeUserID().call());
 			var pool8ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool7userList(pool8activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap7.html">Autopool 8</a></td><td><h2><a href="#">9000 TRX</a></h2></td><td class="text-center">' + pool8CurrUserID + '</td><td class="text-center">' + pool8activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool8ActiveUser + '" target="_blank">' + pool8ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap7.html">Autopool 7</a></td><td><h2><a href="#">9000 TRX</a></h2></td><td class="text-center">' + pool8CurrUserID + '</td><td class="text-center">' + pool8activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool8ActiveUser + '" target="_blank">' + pool8ActiveUser + '</a></td></tr>';
 
 
 			var pool9CurrUserID = parseInt(await MatrixInstance.pool8currUserID().call());
 			var pool9activeUserID = parseInt(await MatrixInstance.pool8activeUserID().call());
 			var pool9ActiveUser = await tronWeb.address.fromHex(await MatrixInstance.pool8userList(pool9activeUserID).call());
-			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap8.html">Autopool 9</a></td><td><h2><a href="#">12000 TRX</a></h2></td><td class="text-center">' + pool9CurrUserID + '</td><td class="text-center">' + pool9activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool9ActiveUser + '" target="_blank">' + pool9ActiveUser + '</a></td></tr>';
+			document.getElementById("poolGlanceTable").innerHTML += '<tr><td><a href="ap8.html">Autopool 8</a></td><td><h2><a href="#">12000 TRX</a></h2></td><td class="text-center">' + pool9CurrUserID + '</td><td class="text-center">' + pool9activeUserID + '</td><td><a href="https://tronscan.org/#/address/' + pool9ActiveUser + '" target="_blank">' + pool9ActiveUser + '</a></td></tr>';
 
 		}
 	</script>
